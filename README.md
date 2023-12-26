@@ -25,9 +25,11 @@
 
 ### 3.1 前端界面 
 
-![e6652e2e30d8e34abb6f89a34344969](D:\Wechat_file\WeChat Files\wxid_hgfq2cllw2ok22\FileStorage\Temp\e6652e2e30d8e34abb6f89a34344969.png)
+**参考界面**:
+![d17b315fead16e10fbb8cf393fd1028](https://github.com/leejamesss/LLM_Java/assets/117844938/4fd4e1ad-8bac-494b-8772-343253372ce4)
+![e6652e2e30d8e34abb6f89a34344969](https://github.com/leejamesss/LLM_Java/assets/117844938/57d1b969-536d-46fd-b78c-5267f61d1c2e)
+![96e5fbb218bd5b167fddcb7682f7b9b](https://github.com/leejamesss/LLM_Java/assets/117844938/e7a74203-f0c9-4e64-aa2b-d5c7b97cd482)
 
-![96e5fbb218bd5b167fddcb7682f7b9b](D:\Wechat_file\WeChat Files\wxid_hgfq2cllw2ok22\FileStorage\Temp\96e5fbb218bd5b167fddcb7682f7b9b.png)
 
 前端功能：
 
