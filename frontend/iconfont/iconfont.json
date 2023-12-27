@@ -1,0 +1,30 @@
+{
+  "id": "4390479",
+  "name": "create-robot",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "666885",
+      "name": "设置",
+      "font_class": "shezhi",
+      "unicode": "e68f",
+      "unicode_decimal": 59023
+    },
+    {
+      "icon_id": "3868276",
+      "name": "使用文档",
+      "font_class": "shiyongwendang",
+      "unicode": "eb66",
+      "unicode_decimal": 60262
+    },
+    {
+      "icon_id": "4822215",
+      "name": "头脑",
+      "font_class": "tounao",
+      "unicode": "e697",
+      "unicode_decimal": 59031
+    }
+  ]
+}
