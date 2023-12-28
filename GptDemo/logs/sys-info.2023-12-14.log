@@ -1,0 +1,28 @@
+2023-12-14 00:00:36 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-14 00:00:36 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 3592 (C:\Users\86152\Desktop\GptDemo\target\classes started by 86152 in C:\Users\86152\Desktop\GptDemo)
+2023-12-14 00:00:37 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-14 00:00:38 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-14 00:00:38 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-14 00:00:38 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-14 00:00:38 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-14 00:00:38 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-14 00:00:38 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-14 00:00:38 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-14 00:00:38 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-14 00:00:38 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-14 00:00:38 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 1085 ms
+2023-12-14 00:00:38 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+2023-12-14 00:07:54 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-14 00:07:54 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 22628 (C:\Users\86152\Desktop\GptDemo\target\classes started by 86152 in C:\Users\86152\Desktop\GptDemo)
+2023-12-14 00:07:54 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-14 00:07:55 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-14 00:07:55 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-14 00:07:55 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-14 00:07:55 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-14 00:07:55 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-14 00:07:55 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-14 00:07:55 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-14 00:07:55 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-14 00:07:55 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-14 00:07:55 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 1020 ms
+2023-12-14 00:07:55 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
