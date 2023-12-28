@@ -37,8 +37,10 @@ import static com.theokanning.openai.service.OpenAiService.*;
 public class ChatService {
 
     private static final Logger LOG = LoggerFactory.getLogger(ChatService.class);
-
-    String token = "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";
+//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
+//    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
+//    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
+    String token = "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";
     String proxyHost = "127.0.0.1";
     int proxyPort = 7890;
 
@@ -60,7 +62,7 @@ public class ChatService {
                 .model("gpt-3.5-turbo")
                 .messages(messages)
                 .n(1)
-//                .maxTokens(500)
+                .maxTokens(2048)
                 .logitBias(new HashMap<>())
                 .build();
 
@@ -70,15 +72,15 @@ public class ChatService {
         OpenAiService service = buildOpenAiService(token, proxyHost, proxyPort);
         service.streamChatCompletion(chatCompletionRequest)
                 //正常结束
-                .doOnComplete(() -> {
-                    LOG.info("连接结束");
-
-                    //发送连接关闭事件，让客户端主动断开连接避免重连
-                    sendStopEvent(sseEmitter);
-
-                    //完成请求处理
-                    sseEmitter.complete();
-                })
+//                .doOnComplete(() -> {
+//                    LOG.info("连接结束");
+//
+//                    //发送连接关闭事件，让客户端主动断开连接避免重连
+//                    sendStopEvent(sseEmitter);
+//
+//                    //完成请求处理
+//                    sseEmitter.complete();
+//                })
                 //异常结束
                 .doOnError(throwable -> {
                     LOG.error("连接异常", throwable);
@@ -96,6 +98,15 @@ public class ChatService {
                     if (StrUtil.isEmpty(choice.getFinishReason())) {
                         //未结束时才可以发送消息（结束后，先调用doOnComplete然后还会收到一条结束消息，因连接关闭导致发送消息失败:ResponseBodyEmitter has already completed）
                         sseEmitter.send(choice.getMessage());
+                    } else {
+
+                    LOG.info("连接结束");
+
+                    //发送连接关闭事件，让客户端主动断开连接避免重连
+                    sendStopEvent(sseEmitter);
+
+                    //完成请求处理
+                    sseEmitter.complete();
                     }
                     String content = choice.getMessage().getContent();
                     content = content == null ? StrUtil.EMPTY : content;

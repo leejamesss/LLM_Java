@@ -17,6 +17,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * @author lijiatao
  *
  */
+@CrossOrigin
 @Controller
 @RequestMapping("/chat")
 public class ChatController {
@@ -37,7 +38,7 @@ public class ChatController {
      */
     @ResponseBody
     @PostMapping("/sendMsg")
-    public String sendMsg(String msg) {
+    public String sendMsg(@RequestParam String msg) {
         String msgId = IdUtil.simpleUUID();
         msgMap.put(msgId, msg);
         return msgId;
