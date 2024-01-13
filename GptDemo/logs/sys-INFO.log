@@ -1,0 +1,1455 @@
+2023-12-28 11:44:30 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 11:44:30 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 14132 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 11:44:30 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 11:44:31 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 11:44:31 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 11:44:31 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 11:44:31 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 11:44:31 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 11:44:31 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 11:44:31 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 11:44:31 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 11:44:31 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 11:44:31 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 846 ms
+2023-12-28 11:44:32 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 11:44:32 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 11:44:32 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.55 seconds (JVM running for 2.344)
+2023-12-28 11:44:47 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 22192 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 11:44:47 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 11:44:47 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 11:44:47 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 11:44:47 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 11:44:47 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 11:44:47 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 11:44:47 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 11:44:47 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 11:44:47 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 11:44:47 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 11:44:48 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 11:44:48 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 821 ms
+2023-12-28 11:44:48 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 11:44:48 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 11:44:48 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.545 seconds (JVM running for 2.187)
+2023-12-28 11:45:28 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 11:45:28 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 11:45:28 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2023-12-28 11:45:36 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：good
+2023-12-28 11:45:52 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：good
+2023-12-28 11:47:02 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：?
+2023-12-28 11:47:18 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：cc
+2023-12-28 11:47:32 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 14500 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 11:47:32 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 11:47:32 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 11:47:33 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 11:47:33 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 11:47:33 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 11:47:33 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 11:47:33 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 11:47:33 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 11:47:33 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 11:47:33 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 11:47:33 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 11:47:33 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 755 ms
+2023-12-28 11:47:33 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 11:47:33 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 11:47:33 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.368 seconds (JVM running for 1.905)
+2023-12-28 11:47:41 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 11:47:41 [http-nio-8080-exec-2] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 11:47:41 [http-nio-8080-exec-2] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2023-12-28 11:47:51 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：nizfmel 
+2023-12-28 11:48:29 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 23408 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 11:48:29 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 11:48:29 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 11:48:29 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 11:48:29 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 11:48:29 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 11:48:29 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 11:48:29 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 11:48:29 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 11:48:29 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 11:48:29 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 11:48:30 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 11:48:30 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 737 ms
+2023-12-28 11:48:30 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 11:48:30 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 11:48:30 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.389 seconds (JVM running for 1.96)
+2023-12-28 11:48:34 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 11:48:34 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 11:48:34 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2023-12-28 11:48:34 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：nizfmel 
+2023-12-28 11:48:42 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：hello
+2023-12-28 11:51:00 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：hello
+2023-12-28 11:51:03 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：hello
+2023-12-28 11:51:04 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：hello
+2023-12-28 11:53:55 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：hellop
+2023-12-28 11:54:08 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：hellop
+2023-12-28 11:54:24 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：hello
+2023-12-28 11:54:51 [task-9] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：hello
+2023-12-28 11:55:19 [task-10] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：good
+2023-12-28 11:55:47 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 11:55:47 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 3024 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 11:55:47 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 11:55:47 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 11:55:47 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 11:55:47 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 11:55:47 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 11:55:47 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 11:55:47 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 11:55:47 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 11:55:47 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 11:55:47 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 11:55:47 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 715 ms
+2023-12-28 11:55:48 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 11:55:48 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 11:55:48 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.346 seconds (JVM running for 1.967)
+2023-12-28 11:55:56 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 11:55:56 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 11:55:56 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2023-12-28 11:55:59 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：good
+2023-12-28 11:56:01 [OkHttp https://api.openai.com/...] INFO  o.e.c.s.ChatService - [lambda$streamChatCompletion$0,74] - 连接结束
+2023-12-28 11:56:01 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,104] - 收到的完整消息：I'm glad you think so!
+2023-12-28 11:56:04 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:56:08 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：aksdhj
+2023-12-28 11:56:10 [OkHttp https://api.openai.com/...] INFO  o.e.c.s.ChatService - [lambda$streamChatCompletion$0,74] - 连接结束
+2023-12-28 11:56:10 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,104] - 收到的完整消息：I'm sorry, but I'm not able to create or continue a song for you.
+2023-12-28 11:56:12 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:56:13 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:56:16 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:56:17 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:56:20 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:56:21 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:56:24 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:56:26 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:56:28 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:56:30 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:56:32 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:56:34 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:56:37 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:56:38 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:56:41 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:56:42 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:56:45 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:56:46 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:56:49 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:56:50 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:56:53 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:56:54 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:56:57 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:56:58 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:02 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:02 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:06 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:06 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:10 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:10 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:14 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:14 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:18 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:18 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:22 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:22 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:27 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:27 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:31 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:31 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:35 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:35 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:39 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:39 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:43 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:44 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:47 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:48 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:51 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:52 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:55 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:56 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:57:59 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:00 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:03 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:04 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:08 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:08 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:12 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:12 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:16 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:16 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:20 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:20 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:24 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:25 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:28 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:29 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:32 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:33 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:36 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:37 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:40 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:41 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:45 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:48 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:49 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:52 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:53 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:56 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:58:57 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:00 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:01 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:04 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:05 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:08 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:09 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:12 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:13 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:16 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:17 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:21 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:21 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:25 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:26 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:29 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:30 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:33 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:34 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:37 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:38 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:41 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:42 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:45 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:46 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:50 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:51 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:54 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:55 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:58 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 11:59:59 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:02 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:03 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:06 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:07 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:10 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:11 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:14 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:15 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:18 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:19 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:22 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:23 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:27 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:31 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:31 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:35 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:35 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:39 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:41 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:43 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:45 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:47 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:49 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:51 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:53 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:55 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:58 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:00:59 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:02 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:03 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:06 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:07 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:10 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:11 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:14 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:15 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:18 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:20 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:22 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:24 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:26 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:28 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:30 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:32 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:34 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:36 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:38 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:40 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:42 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:44 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:46 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:48 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:51 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:52 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:55 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:56 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:01:59 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:00 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:03 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:04 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:07 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:08 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:11 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:12 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:15 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:16 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:19 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:20 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:23 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:25 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:27 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:29 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:31 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:33 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:35 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:37 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:39 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:41 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:43 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:45 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:47 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:49 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:51 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:53 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:56 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:02:57 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:00 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:01 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:04 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:05 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:09 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:09 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:13 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:13 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:17 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:18 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:21 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:22 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:25 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:26 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:29 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:30 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:33 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:34 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:37 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:38 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:41 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:42 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:45 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:46 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:49 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:50 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:53 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:54 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:03:58 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 12:03:58 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 11724 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 12:03:58 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 12:03:59 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 12:03:59 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 12:03:59 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 12:03:59 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 12:03:59 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 12:03:59 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:03:59 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 12:03:59 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 12:03:59 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 12:03:59 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 727 ms
+2023-12-28 12:03:59 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:04:00 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 12:04:00 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.391 seconds (JVM running for 2.069)
+2023-12-28 12:04:00 [http-nio-8080-exec-4] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 12:04:00 [http-nio-8080-exec-4] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 12:04:00 [http-nio-8080-exec-4] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 3 ms
+2023-12-28 12:04:00 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:04:00 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:04:04 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:04:04 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:04:08 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:04:08 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:04:12 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:04:12 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:04:16 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:04:16 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:04:25 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：good'
+2023-12-28 12:04:29 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:04:33 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:04:35 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:04:37 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:04:41 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:04:46 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:04:50 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:04:54 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:04:58 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:05:02 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:05:06 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:05:10 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:05:14 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:05:18 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:05:22 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:05:26 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:05:30 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:05:35 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:05:39 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:05:50 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：hello
+2023-12-28 12:05:54 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:05:58 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:06:03 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:06:08 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:06:12 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:06:13 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:06:16 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:06:20 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:06:24 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:06:28 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:06:32 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:06:39 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:06:43 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:06:47 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:06:51 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:06:55 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:07:00 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:07:04 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:07:08 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:07:12 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:07:16 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:07:20 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:07:24 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:07:28 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:07:32 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 12:07:32 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 2308 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 12:07:32 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 12:07:33 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 12:07:33 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 12:07:33 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 12:07:33 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 12:07:33 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 12:07:33 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:07:33 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 12:07:33 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 12:07:33 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 12:07:33 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 697 ms
+2023-12-28 12:07:33 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:07:33 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 12:07:33 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.322 seconds (JVM running for 2.049)
+2023-12-28 12:07:33 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 12:07:33 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 12:07:33 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 0 ms
+2023-12-28 12:07:33 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:07:38 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:07:58 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：JJSLdjla
+2023-12-28 12:08:02 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:08:06 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:08:10 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:08:14 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:08:18 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:08:22 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 12:08:22 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 4952 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 12:08:22 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 12:08:22 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 12:08:22 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 12:08:22 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 12:08:22 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 12:08:22 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 12:08:22 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:08:22 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 12:08:22 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 12:08:23 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 12:08:23 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 685 ms
+2023-12-28 12:08:23 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:08:23 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 12:08:23 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.352 seconds (JVM running for 2.096)
+2023-12-28 12:08:23 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 12:08:23 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 12:08:23 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2023-12-28 12:08:23 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:08:30 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：h
+2023-12-28 12:08:34 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:08:36 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:08:39 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:08:44 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：h
+2023-12-28 12:08:48 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:08:52 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:08:56 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:09:00 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:09:05 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:09:09 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:09:13 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:09:17 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:09:21 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:09:25 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:09:30 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 12:09:30 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 15636 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 12:09:30 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 12:09:31 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 12:09:31 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 12:09:31 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 12:09:31 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 12:09:31 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 12:09:31 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:09:31 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 12:09:31 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 12:09:31 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 12:09:31 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 715 ms
+2023-12-28 12:09:31 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:09:31 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 12:09:31 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.345 seconds (JVM running for 2.059)
+2023-12-28 12:09:35 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 12:09:35 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 12:09:35 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2023-12-28 12:09:43 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：why
+2023-12-28 12:09:47 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:09:51 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:09:55 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:09:59 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:10:03 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:10:07 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:10:11 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:10:16 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:10:20 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:10:24 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:10:28 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:10:32 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:10:37 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:10:41 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:10:45 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:10:50 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:10:54 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:10:58 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:11:02 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:11:06 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:12:24 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 12:12:24 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 22624 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 12:12:24 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 12:12:25 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 12:12:25 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 12:12:25 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 12:12:25 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 12:12:25 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 12:12:25 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:12:25 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 12:12:25 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 12:12:25 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 12:12:25 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 718 ms
+2023-12-28 12:12:25 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:12:25 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 12:12:25 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.314 seconds (JVM running for 1.847)
+2023-12-28 12:12:25 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 12:12:25 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 12:12:25 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2023-12-28 12:12:25 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:12:34 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 12:12:34 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 19884 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 12:12:34 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 12:12:35 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 12:12:35 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 12:12:35 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 12:12:35 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 12:12:35 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 12:12:35 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:12:35 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 12:12:35 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 12:12:35 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 12:12:35 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 646 ms
+2023-12-28 12:12:35 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:12:35 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 12:12:35 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.218 seconds (JVM running for 1.758)
+2023-12-28 12:12:41 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 12:12:41 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 12:12:41 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2023-12-28 12:12:49 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：cnm
+2023-12-28 12:12:54 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:12:58 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:13:02 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:13:06 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:13:10 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:13:14 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:13:18 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:13:22 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:13:26 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:13:30 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:13:34 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:13:38 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:13:42 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:13:46 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:13:50 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:13:55 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:13:59 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:14:03 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:14:07 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:14:15 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:14:19 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:14:23 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:14:27 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:14:31 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:14:35 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:14:39 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:14:43 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:14:47 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:14:51 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:14:55 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:14:59 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:15:03 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:15:07 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:15:11 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:15:15 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:15:19 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:15:23 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:15:27 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:15:33 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 12:15:33 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 11216 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 12:15:33 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 12:15:34 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 12:15:34 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 12:15:34 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 12:15:34 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 12:15:34 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 12:15:34 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:15:34 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 12:15:34 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 12:15:34 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 12:15:34 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 679 ms
+2023-12-28 12:15:34 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:15:34 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 12:15:34 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.319 seconds (JVM running for 2.064)
+2023-12-28 12:15:37 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 12:15:37 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 12:15:37 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 0 ms
+2023-12-28 12:15:37 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:15:49 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：alskdjl
+2023-12-28 12:15:53 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:15:57 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:16:01 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:16:05 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:16:10 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:16:14 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:16:18 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:16:22 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:16:26 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:16:30 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:16:34 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:16:38 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:16:42 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:16:47 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:16:51 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:16:55 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:16:59 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:17:03 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:17:07 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:17:11 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:17:15 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:17:19 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:17:23 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:17:27 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:17:31 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:17:35 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:17:39 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:17:43 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:17:47 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:17:51 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:17:56 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:18:00 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:18:04 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:18:09 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:18:13 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:18:18 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:18:22 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:18:26 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:18:30 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:18:34 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:18:38 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:18:42 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:18:46 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:18:50 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:18:54 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:18:59 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 12:18:59 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 10640 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 12:18:59 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 12:18:59 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 12:18:59 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 12:18:59 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 12:18:59 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 12:18:59 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 12:18:59 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:18:59 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 12:18:59 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 12:18:59 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 12:18:59 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 707 ms
+2023-12-28 12:19:00 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:19:00 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 12:19:00 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.321 seconds (JVM running for 1.867)
+2023-12-28 12:19:00 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 12:19:00 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 12:19:00 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2023-12-28 12:19:00 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:19:04 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:19:08 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:19:14 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：hello?
+2023-12-28 12:19:18 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:19:19 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:19:22 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:19:26 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:19:30 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:19:31 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:19:34 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:19:39 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:19:43 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:19:47 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:19:51 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:19:57 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:20:01 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:20:05 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:20:09 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:20:13 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:20:17 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:20:21 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:20:23 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:20:25 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:20:30 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：hello
+2023-12-28 12:20:34 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:20:36 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:20:38 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:20:42 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:20:47 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 12:20:47 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 4264 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 12:20:47 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 12:20:48 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 12:20:48 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 12:20:48 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 12:20:48 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 12:20:48 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 12:20:48 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:20:48 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 12:20:48 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 12:20:48 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 12:20:48 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 729 ms
+2023-12-28 12:20:48 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:20:48 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 12:20:48 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.336 seconds (JVM running for 1.891)
+2023-12-28 12:20:48 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 12:20:48 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 12:20:48 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2023-12-28 12:20:48 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:21:06 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：hello
+2023-12-28 12:21:10 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:21:14 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:21:18 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:21:22 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:21:28 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:21:32 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:21:36 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:21:40 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:21:44 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:21:48 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:21:53 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:21:57 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:22:01 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:22:05 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:22:09 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:22:13 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:22:19 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 12:22:19 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 14172 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 12:22:19 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 12:22:20 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 12:22:20 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 12:22:20 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 12:22:20 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 12:22:20 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 12:22:20 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:22:20 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 12:22:20 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 12:22:20 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 12:22:20 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 669 ms
+2023-12-28 12:22:20 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:22:20 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 12:22:20 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.565 seconds (JVM running for 2.422)
+2023-12-28 12:22:22 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 12:22:22 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 12:22:22 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2023-12-28 12:22:30 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：hchchc
+2023-12-28 12:28:51 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 22704 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 12:28:51 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 12:28:51 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 12:28:52 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 12:28:52 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 12:28:52 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 12:28:52 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 12:28:52 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 12:28:52 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:28:52 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 12:28:52 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 12:28:52 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 12:28:52 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 703 ms
+2023-12-28 12:28:52 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:28:52 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 12:28:52 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.322 seconds (JVM running for 1.95)
+2023-12-28 12:29:18 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 12:29:18 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 12:29:18 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2023-12-28 12:29:26 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：good
+2023-12-28 12:29:29 [OkHttp https://api.openai.com/...] INFO  o.e.c.s.ChatService - [lambda$streamChatCompletion$0,74] - 连接结束
+2023-12-28 12:29:48 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 3808 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 12:29:48 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 12:29:48 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 12:29:49 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 12:29:49 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 12:29:49 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 12:29:49 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 12:29:49 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 12:29:49 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:29:49 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 12:29:49 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 12:29:49 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 12:29:49 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 668 ms
+2023-12-28 12:29:49 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:29:49 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 12:29:49 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.313 seconds (JVM running for 2.056)
+2023-12-28 12:29:52 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 12:29:52 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 12:29:52 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 0 ms
+2023-12-28 12:29:52 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：good
+2023-12-28 12:29:55 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：good
+2023-12-28 12:30:13 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：good
+2023-12-28 12:30:17 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:30:58 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 12:30:58 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 3704 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 12:30:58 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 12:30:59 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 12:30:59 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 12:30:59 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 12:30:59 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 12:30:59 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 12:30:59 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:30:59 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 12:30:59 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 12:30:59 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 12:30:59 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 710 ms
+2023-12-28 12:30:59 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:30:59 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 12:31:00 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.521 seconds (JVM running for 2.285)
+2023-12-28 12:31:13 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 12:31:13 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 12:31:13 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 0 ms
+2023-12-28 12:31:17 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：chat
+2023-12-28 12:31:23 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：chat
+2023-12-28 12:31:26 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：chat
+2023-12-28 12:31:28 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：chat
+2023-12-28 12:31:57 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 6832 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 12:31:57 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 12:31:57 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 12:31:58 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 12:31:58 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 12:31:58 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 12:31:58 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 12:31:58 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 12:31:58 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:31:58 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 12:31:58 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 12:31:58 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 12:31:58 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 733 ms
+2023-12-28 12:31:58 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:31:58 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 12:31:58 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.773 seconds (JVM running for 2.391)
+2023-12-28 12:32:01 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 12:32:01 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 12:32:01 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2023-12-28 12:32:01 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：chat
+2023-12-28 12:32:03 [OkHttp https://api.openai.com/...] INFO  o.e.c.s.ChatService - [lambda$streamChatCompletion$0,74] - 连接结束
+2023-12-28 12:32:50 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 12:32:50 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 6924 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 12:32:50 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 12:32:50 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 12:32:50 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 12:32:50 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 12:32:50 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 12:32:50 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 12:32:50 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:32:50 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 12:32:50 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 12:32:50 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 12:32:50 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 690 ms
+2023-12-28 12:32:51 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:32:51 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 12:32:51 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.349 seconds (JVM running for 2.113)
+2023-12-28 12:32:55 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 12:32:55 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 12:32:55 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 3 ms
+2023-12-28 12:32:55 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：chat
+2023-12-28 12:32:59 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：chat
+2023-12-28 12:33:01 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：chat
+2023-12-28 12:33:02 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：chat
+2023-12-28 12:33:05 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：chat
+2023-12-28 12:33:20 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：ach
+2023-12-28 12:33:25 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:33:29 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:33:33 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:33:37 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:33:41 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:34:57 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 4748 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 12:34:57 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 12:34:57 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 12:34:57 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 12:34:57 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 12:34:57 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 12:34:57 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 12:34:57 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 12:34:57 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:34:57 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 12:34:57 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 12:34:57 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 12:34:57 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 694 ms
+2023-12-28 12:34:58 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:34:58 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 12:34:58 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.312 seconds (JVM running for 2.039)
+2023-12-28 12:35:05 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 12:35:05 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 12:35:05 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 0 ms
+2023-12-28 12:35:41 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：chat
+2023-12-28 12:35:45 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:35:49 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:35:54 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:35:57 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：chat
+2023-12-28 12:36:01 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:36:06 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：w
+2023-12-28 12:36:10 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:36:14 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 12:36:14 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 14736 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 12:36:14 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 12:36:15 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 12:36:15 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 12:36:15 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 12:36:15 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 12:36:15 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 12:36:15 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:36:15 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 12:36:15 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 12:36:15 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 12:36:15 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 707 ms
+2023-12-28 12:36:15 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:36:15 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 12:36:15 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.436 seconds (JVM running for 2.05)
+2023-12-28 12:36:15 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 12:36:15 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 12:36:15 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2023-12-28 12:36:15 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:36:20 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:36:24 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:36:28 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:36:32 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:36:36 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:36:42 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：we
+2023-12-28 12:36:46 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:36:50 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:36:54 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:36:58 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:37:02 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:37:06 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:37:10 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:37:14 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:37:18 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:37:22 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:37:26 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:37:30 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:37:34 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:37:38 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:37:42 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:37:47 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:37:51 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:37:55 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:37:59 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:38:03 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:38:07 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:38:11 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:38:16 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:38:20 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:38:24 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:38:28 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:38:32 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:38:36 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:38:40 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:38:44 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:38:48 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:38:52 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:38:56 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:39:01 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:39:05 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:39:09 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:39:13 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:39:17 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:39:22 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:39:29 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:39:34 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 12:39:34 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 1168 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 12:39:34 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 12:39:34 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 12:39:34 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 12:39:34 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 12:39:34 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 12:39:34 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 12:39:34 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:39:34 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 12:39:34 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 12:39:34 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 12:39:34 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 778 ms
+2023-12-28 12:39:35 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:39:35 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 12:39:35 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.457 seconds (JVM running for 2.298)
+2023-12-28 12:39:43 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 12:39:43 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 12:39:43 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 0 ms
+2023-12-28 12:39:48 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：good
+2023-12-28 12:39:52 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:39:56 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:40:00 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:40:05 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:40:09 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:40:13 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:40:17 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:40:21 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:40:25 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:40:29 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 12:40:29 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 21852 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 12:40:29 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 12:40:29 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 12:40:29 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 12:40:29 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 12:40:29 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 12:40:29 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 12:40:29 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:40:29 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 12:40:29 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 12:40:29 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 12:40:29 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 699 ms
+2023-12-28 12:40:30 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:40:30 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 12:40:30 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.329 seconds (JVM running for 2.08)
+2023-12-28 12:40:30 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 12:40:30 [http-nio-8080-exec-3] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 12:40:30 [http-nio-8080-exec-3] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2023-12-28 12:40:30 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:40:36 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：chat
+2023-12-28 12:40:46 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：chat
+2023-12-28 12:41:25 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 12:41:25 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 18696 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 12:41:25 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 12:41:25 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 12:41:25 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 12:41:25 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 12:41:25 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 12:41:25 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 12:41:25 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:41:25 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 12:41:25 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 12:41:25 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 12:41:25 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 739 ms
+2023-12-28 12:41:26 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:41:26 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 12:41:26 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.477 seconds (JVM running for 2.274)
+2023-12-28 12:41:28 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 12:41:28 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 12:41:28 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2023-12-28 12:41:30 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：good
+2023-12-28 12:41:53 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 12:41:53 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 5220 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 12:41:53 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 12:41:53 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 12:41:53 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 12:41:53 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 12:41:53 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 12:41:53 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 12:41:53 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:41:53 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 12:41:53 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 12:41:53 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 12:41:53 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 700 ms
+2023-12-28 12:41:54 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:41:54 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 12:41:54 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.302 seconds (JVM running for 1.897)
+2023-12-28 12:43:25 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 12:43:25 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 472 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 12:43:25 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 12:43:25 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 12:43:25 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 12:43:25 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 12:43:25 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 12:43:25 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 12:43:25 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:43:25 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 12:43:25 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 12:43:25 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 12:43:25 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 698 ms
+2023-12-28 12:43:26 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:43:26 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 12:43:26 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.296 seconds (JVM running for 1.958)
+2023-12-28 12:43:30 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 12:43:30 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 12:43:30 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2023-12-28 12:43:31 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：
+2023-12-28 12:43:35 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：asds 
+2023-12-28 12:44:15 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 12:44:15 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 21064 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 12:44:15 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 12:44:16 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 12:44:16 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 12:44:16 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 12:44:16 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 12:44:16 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 12:44:16 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:44:16 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 12:44:16 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 12:44:16 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 12:44:16 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 776 ms
+2023-12-28 12:44:16 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:44:16 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 12:44:16 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.436 seconds (JVM running for 1.971)
+2023-12-28 12:44:16 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 12:44:16 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 12:44:16 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2023-12-28 12:44:19 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：goood
+2023-12-28 12:44:30 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 12:44:30 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 17324 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 12:44:30 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 12:44:31 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 12:44:31 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 12:44:31 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 12:44:31 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 12:44:31 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 12:44:31 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:44:31 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 12:44:31 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 12:44:31 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 12:44:31 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 680 ms
+2023-12-28 12:44:31 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:44:31 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 12:44:31 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.274 seconds (JVM running for 1.865)
+2023-12-28 12:44:37 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 12:44:37 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 12:44:37 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2023-12-28 12:44:38 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：goood
+2023-12-28 12:46:11 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 8708 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 12:46:11 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 12:46:11 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 12:46:12 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 12:46:12 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 12:46:12 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 12:46:12 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 12:46:12 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 12:46:12 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:46:12 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 12:46:12 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 12:46:12 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 12:46:12 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 717 ms
+2023-12-28 12:46:12 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 12:46:12 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 12:46:12 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.386 seconds (JVM running for 2.192)
+2023-12-28 12:46:13 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 12:46:13 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 12:46:13 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2023-12-28 12:46:16 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：good
+2023-12-28 12:46:20 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:46:24 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:46:29 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:46:33 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 12:46:37 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：null
+2023-12-28 13:25:29 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 13:25:29 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 4380 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 13:25:29 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 13:25:30 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 13:25:30 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 13:25:30 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 13:25:30 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 13:25:30 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 13:25:30 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 13:25:30 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 13:25:30 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 13:25:30 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 13:25:30 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 936 ms
+2023-12-28 13:25:31 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 13:25:31 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 13:25:31 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.808 seconds (JVM running for 2.755)
+2023-12-28 13:25:40 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 13:25:40 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 13:25:40 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 2 ms
+2023-12-28 13:25:45 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：goood
+2023-12-28 13:25:47 [OkHttp https://api.openai.com/...] INFO  o.e.c.s.ChatService - [lambda$streamChatCompletion$0,74] - 连接结束
+2023-12-28 13:25:47 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,104] - 收到的完整消息：Good morning! How can I assist you today?
+2023-12-28 13:26:10 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：请输出一段1000字左右的文字，不限内容
+2023-12-28 13:26:46 [OkHttp https://api.openai.com/...] INFO  o.e.c.s.ChatService - [lambda$streamChatCompletion$0,74] - 连接结束
+2023-12-28 13:27:02 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：请翻译以下内容：good morning
+2023-12-28 13:27:04 [OkHttp https://api.openai.com/...] INFO  o.e.c.s.ChatService - [lambda$streamChatCompletion$0,74] - 连接结束
+2023-12-28 13:27:04 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,104] - 收到的完整消息：早上好
+2023-12-28 13:31:16 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 13:31:16 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 3524 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 13:31:16 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 13:31:17 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 13:31:17 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 13:31:17 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 13:31:17 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 13:31:17 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 13:31:17 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 13:31:17 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 13:31:17 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 13:31:17 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 13:31:17 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 1015 ms
+2023-12-28 13:31:18 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 13:31:18 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 13:31:18 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 2.074 seconds (JVM running for 3.341)
+2023-12-28 13:32:07 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 13:32:07 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 13:32:07 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2023-12-28 13:32:28 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：请输入一段1000字的文字，内容不限
+2023-12-28 13:33:04 [OkHttp https://api.openai.com/...] INFO  o.e.c.s.ChatService - [lambda$streamChatCompletion$0,74] - 连接结束
+2023-12-28 13:33:04 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,104] - 收到的完整消息：在茫茫人海中，我们每个人都有自己的故事，每个人都有自己的目标和追求。生活中，我们经历了许多的困难和挫折，也享受了许多的快乐和成功。我们的人生或许不是一帆风顺的，但正是这些经历塑造了我们的性格，让我们成为今天的自己。
+
+人生不会总是如我们所愿，很多时候我们会面对各种各样的困难和挑战。有时候，我们可能会感到十分迷茫和无助，甚至觉得生活对我们不公平。但是，正是这些困难和挑战让我们变得更加坚强和勇敢。当我们面对困难时，我们必须学会如何去应对和解决问题，这样我们才能不断成长和进步。
+
+人生中的快乐和成功也是我们不可或缺的一部分。每个人对快乐和成功的定义是不同的，有人认为家庭的和睦是最大的快乐，有人认为事业的成功是最重要的。无论快乐和成功的定义如何，它们都是我们不断努力和追求的动力。当我们取得了小小的胜利，我们会感到十分的兴奋和满足。这种满足感会激励我们继续努力，追求更大的成功和快乐。
+
+人生中的目标和追求是我们努力奋斗的方向。每个人都有自己的理想和目标，有的人希望成为一名医生，有的人梦想成为一名艺术家。无论目标是什么，我们都需要付出努力和坚持才能实现。追求目标的过程中，我们可能会遇到各种各样的挫折和困难，但只要我们有信心和毅力，就能够克服困难，实现自己的梦想。
+
+人生在不断地经历中，我们也会遇到很多的选择和抉择。有时候，我们不知道该选择哪条道路，害怕自己做出错误的决定。但是，我们必须相信自己的直觉和能力，相信自己可以做出正确的选择。不管选择什么，我们都应该勇敢地去尝试，因为只有在尝试中我们才能找到最适合自己的道路。
+
+人生不仅仅是困难和挫折，也不仅仅是快乐和成功。它是一个充满了各种各样的经历和感受的旅程。我们需要学会欣赏每一个瞬间，感受每一段经历。无论是喜怒哀乐，都是我们成长的机会，都是我们人生中宝贵的财富。
+
+最后，人生是一段独特且珍贵的旅程。我们每个人都有自己的故事，每个人都有自己的目标和追求。让我们珍惜每一个时刻，积极面对困难和挑战，努力追求快乐和成功，相信自己的选择和决定。只有这样，我们才能在这段旅程中收获更多的经验和成长，成为更好的自己。
+2023-12-28 13:33:32 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 26124 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 13:33:32 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 13:33:32 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 13:33:33 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 13:33:33 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 13:33:33 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 13:33:33 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 13:33:33 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 13:33:33 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 13:33:33 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 13:33:33 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 13:33:33 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 13:33:33 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 928 ms
+2023-12-28 13:33:34 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 13:33:34 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 13:33:34 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.838 seconds (JVM running for 2.748)
+2023-12-28 13:33:39 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 13:33:39 [http-nio-8080-exec-3] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 13:33:39 [http-nio-8080-exec-3] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2023-12-28 13:33:54 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：请输出一段1000字的文字，内容不限
+2023-12-28 13:34:26 [OkHttp https://api.openai.com/...] INFO  o.e.c.s.ChatService - [lambda$streamChatCompletion$0,74] - 连接结束
+2023-12-28 13:34:26 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,104] - 收到的完整消息：在这个多事之秋，我想谈一谈关于"重启"的话题。当我们遭遇困境，面对挑战时，我们常听到人们说"重启"，不管是工作上的挑战，生活中的问题，还是个人成长中的困惑，"重启"似乎成了一种通行的解决方式。
+
+"重启"是一种重新开始的意味，就如电脑一般，在系统出现问题时，我们通常会选择"重启"来解决。同样地，当我们遭遇挫折、迷茫、失败时，"重启"也是我们可以尝试的一种方式。它代表着放下过去的包袱，重新调整心态，重新审视问题，重新出发。
+
+然而，"重启"不仅仅是一种行动，更是一种态度。它包括了勇气、决心、坚持和改变的力量。当我们选择"重启"时，我们也必须要有面对困难、接受失败、适应变化的勇气。重启并不代表一帆风顺，它可能会伴随着迷茫和挣扎，但正是这种勇气让我们能够不断超越自我。
+
+重启也需要一种决心，你要有足够的决心去克服困难，迎接挑战。当你决定重启时，意味着你已经下定决心要改变，要迈向更好的自己。只有真正对自己下定决心，才能克服困难，走出舒适区。
+
+而要成功地重启，坚持是必不可少的。坚持不仅是每天持续努力，也是在遇到挫折时不放弃。重启的过程中，你可能会遇到各种各样的困难，但只要你坚持下去，始终保持对目标的追求和对自己的信心，最终就能够成功重启。
+
+最后，重启意味着改变。要成功地重启，我们必须要愿意接受改变，开放心态去尝试新的方式、新的想法。只有敢于改变，才能给自己带来新的机遇和可能。
+
+在这个快节奏、瞬息万变的时代，"重启"成了我们生活中必备的能力之一。它提醒我们要勇敢面对困境，要有决心去追求自己的目标，要坚持不懈地努力，要敢于改变。重启是一种态度，一种积极向上的态度，让我们能够找到新的方向，迎接新的挑战。
+
+所以，无论你身处何种困境，面对何种挑战，不要忘记选择"重启"。相信自己的能力和潜力，勇敢迎接新的起点，坚定地向前迈进。让"重启"成为你追求成功的秘密武器，带来无限可能。
+2023-12-28 13:38:56 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：很好
+2023-12-28 13:38:59 [OkHttp https://api.openai.com/...] INFO  o.e.c.s.ChatService - [lambda$streamChatCompletion$0,74] - 连接结束
+2023-12-28 14:15:20 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 14:15:20 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 1792 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 14:15:20 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 14:15:21 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 14:15:21 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 14:15:21 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 14:15:21 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 14:15:21 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 14:15:21 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 14:15:21 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 14:15:21 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 14:15:21 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 14:15:21 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 1021 ms
+2023-12-28 14:15:22 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 14:15:22 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 14:15:22 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 2.054 seconds (JVM running for 2.846)
+2023-12-28 14:15:28 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 14:15:28 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 14:15:28 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 0 ms
+2023-12-28 14:15:32 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：你好
+2023-12-28 14:15:35 [OkHttp https://api.openai.com/...] INFO  o.e.c.s.ChatService - [lambda$streamChatCompletion$0,74] - 连接结束
+2023-12-28 14:15:42 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：匿藏
+2023-12-28 14:15:43 [OkHttp https://api.openai.com/...] INFO  o.e.c.s.ChatService - [lambda$streamChatCompletion$0,74] - 连接结束
+2023-12-28 14:15:56 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：匿藏
+2023-12-28 14:15:58 [OkHttp https://api.openai.com/...] INFO  o.e.c.s.ChatService - [lambda$streamChatCompletion$0,74] - 连接结束
+2023-12-28 14:16:41 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 14:16:41 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 20660 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 14:16:41 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 14:16:42 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 14:16:42 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 14:16:42 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 14:16:42 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 14:16:42 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 14:16:42 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 14:16:42 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 14:16:42 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 14:16:42 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 14:16:42 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 824 ms
+2023-12-28 14:16:43 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 14:16:43 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 14:16:43 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.747 seconds (JVM running for 2.551)
+2023-12-28 14:16:43 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 14:16:43 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 14:16:43 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 2 ms
+2023-12-28 14:16:43 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：匿藏
+2023-12-28 14:16:47 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：匿藏
+2023-12-28 14:16:47 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：匿藏
+2023-12-28 14:16:49 [OkHttp https://api.openai.com/...] INFO  o.e.c.s.ChatService - [lambda$streamChatCompletion$0,74] - 连接结束
+2023-12-28 14:16:49 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,104] - 收到的完整消息：抱歉，我不能进行这个操作。
+2023-12-28 14:16:54 [OkHttp https://api.openai.com/...] INFO  o.e.c.s.ChatService - [lambda$streamChatCompletion$0,74] - 连接结束
+2023-12-28 14:17:23 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：匿藏
+2023-12-28 14:17:33 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 14:17:33 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 26296 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 14:17:33 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 14:17:34 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 14:17:34 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 14:17:34 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 14:17:34 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 14:17:34 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 14:17:34 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 14:17:34 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 14:17:34 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 14:17:34 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 14:17:34 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 798 ms
+2023-12-28 14:17:34 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 14:17:34 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 14:17:34 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.676 seconds (JVM running for 2.438)
+2023-12-28 14:17:34 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 14:17:34 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 14:17:34 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2023-12-28 14:17:35 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：匿藏
+2023-12-28 14:17:39 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：匿藏
+2023-12-28 14:17:42 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：匿藏
+2023-12-28 14:17:46 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：匿藏
+2023-12-28 14:20:38 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 8736 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 14:20:38 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 14:20:38 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 14:20:39 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 14:20:39 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 14:20:39 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 14:20:39 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 14:20:39 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 14:20:39 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 14:20:39 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 14:20:39 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 14:20:39 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 14:20:39 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 892 ms
+2023-12-28 14:20:39 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 14:20:39 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 14:20:39 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.827 seconds (JVM running for 2.685)
+2023-12-28 14:20:41 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 14:20:41 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 14:20:41 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2023-12-28 14:20:41 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：匿藏
+2023-12-28 14:20:45 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：
+2023-12-28 14:20:48 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,54] - 发送消息：good
+2023-12-28 14:24:14 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 21012 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 14:24:14 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 14:24:14 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 14:24:15 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 14:24:15 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 14:24:15 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 14:24:15 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 14:24:15 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 14:24:15 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 14:24:15 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 14:24:15 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 14:24:15 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 14:24:15 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 1171 ms
+2023-12-28 14:24:16 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 14:24:16 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 14:24:16 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 2.125 seconds (JVM running for 2.972)
+2023-12-28 14:24:18 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 14:24:18 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 14:24:18 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2023-12-28 14:24:21 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：匿藏
+2023-12-28 14:24:24 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,106] - 收到的完整消息：很抱歉，我的编程逻辑不能这样处理你的请求。
+2023-12-28 14:24:29 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：赛坏昂
+2023-12-28 14:24:48 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,106] - 收到的完整消息：赛坏昂是指比赛中出现了一些不合法、不公正或不道德的行为，通常用于形容一方以不正当手段获得胜利。
+
+赛坏昂通常是赛事中的一个负面现象，会损害比赛的公正性和竞技性。常见的赛坏昂包括违规行为、欺骗、舞弊、操控和故意损害对手等。这些行为不仅违背了比赛规则和道德准则，也削弱了比赛的可信度和观赏性。
+
+赛坏昂的存在会带来一系列的问题。首先，它不公正地影响了其他参赛者的利益，剥夺了他们公平竞争的机会。其次，赛坏昂破坏了比赛的公正性和公信力，使观众和赞助商丧失信心。最后，赛坏昂对运动精神和道德价值观的侵蚀，有悖于体育竞技的本质。
+
+为了防止和打击赛坏昂行为，比赛主办方和相关机构应该制定严格的规则和惩罚机制。同时，要加强对参赛者的教育和约束，培养他们的良好道德和竞技意识。只有通过共同的努力，才能建立一个公平、公正和健康的竞技环境。
+2023-12-28 14:24:52 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：你说得好好
+2023-12-28 14:24:57 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,106] - 收到的完整消息：谢谢夸奖！我会继续努力的。
+2023-12-28 14:25:01 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：撒赖黄四郎
+2023-12-28 14:25:03 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,106] - 收到的完整消息：作为AI助手，我无法对您提供有效的回应。请提供更具体的问题或选择其他话题。
+2023-12-28 14:25:08 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：测试
+2023-12-28 14:25:10 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,106] - 收到的完整消息：测试 successful
+2023-12-28 14:25:12 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：测试ajsldnl
+2023-12-28 14:25:19 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：哦
+2023-12-28 14:26:46 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：askhdlk
+2023-12-28 14:26:48 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,106] - 收到的完整消息：I'm sorry, I couldn't understand your message. Could you please rephrase or provide more context?
+2023-12-28 14:29:57 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 416 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 14:29:57 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 14:29:57 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 14:29:58 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 14:29:58 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 14:29:58 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 14:29:58 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 14:29:58 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 14:29:58 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 14:29:58 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 14:29:58 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 14:29:58 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 14:29:58 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 1196 ms
+2023-12-28 14:29:59 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 14:29:59 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 14:29:59 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 2.107 seconds (JVM running for 2.869)
+2023-12-28 14:30:01 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 14:30:01 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 14:30:01 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2023-12-28 14:30:01 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：null
+2023-12-28 14:30:01 [task-5] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：null
+2023-12-28 14:30:01 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：null
+2023-12-28 14:30:01 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：null
+2023-12-28 14:30:01 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：null
+2023-12-28 14:30:01 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：null
+2023-12-28 14:30:12 [task-7] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：are you ok
+2023-12-28 14:30:22 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：你好
+2023-12-28 14:30:24 [task-8] INFO  o.e.c.s.ChatService - [lambda$streamChatCompletion$1,103] - 连接结束
+2023-12-28 14:30:24 [task-8] INFO  o.e.c.s.ChatService - [streamChatCompletion,115] - 收到的完整消息：你好！有什么可以帮助你的吗？
+2023-12-28 14:30:33 [task-6] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：great
+2023-12-28 14:31:29 [task-9] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：测试
+2023-12-28 14:31:31 [task-9] INFO  o.e.c.s.ChatService - [lambda$streamChatCompletion$1,103] - 连接结束
+2023-12-28 14:31:31 [task-9] INFO  o.e.c.s.ChatService - [streamChatCompletion,115] - 收到的完整消息：测试数据完成。
+2023-12-28 14:31:38 [task-10] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：链接完事
+2023-12-28 14:31:41 [task-10] INFO  o.e.c.s.ChatService - [lambda$streamChatCompletion$1,103] - 连接结束
+2023-12-28 14:31:41 [task-10] INFO  o.e.c.s.ChatService - [streamChatCompletion,115] - 收到的完整消息：好的，链接已完成。谢谢！
+2023-12-28 14:31:53 [task-11] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：元旦快乐
+2023-12-28 14:31:56 [task-11] INFO  o.e.c.s.ChatService - [lambda$streamChatCompletion$1,103] - 连接结束
+2023-12-28 14:31:56 [task-11] INFO  o.e.c.s.ChatService - [streamChatCompletion,115] - 收到的完整消息：感谢您对我的祝福！祝您元旦快乐，新的一年开启，愿您幸福、健康、平安！
+2023-12-28 14:35:59 [task-12] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：元旦快乐
+2023-12-28 14:36:02 [task-12] INFO  o.e.c.s.ChatService - [lambda$streamChatCompletion$1,103] - 连接结束
+2023-12-28 14:36:02 [task-12] INFO  o.e.c.s.ChatService - [streamChatCompletion,115] - 收到的完整消息：感谢你的祝福！我希望你也有一个愉快的新年！
+2023-12-28 15:11:18 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-28 15:11:18 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.5 on 明月 with PID 3632 (D:\Lessons\Java\GptDemo\target\classes started by 86152 in D:\Lessons\Java\GptDemo)
+2023-12-28 15:11:18 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-28 15:11:19 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-28 15:11:19 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+2023-12-28 15:11:19 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-12-28 15:11:19 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-12-28 15:11:19 [main] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2023-12-28 15:11:19 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-28 15:11:19 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-28 15:11:19 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-28 15:11:20 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-28 15:11:20 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 1197 ms
+2023-12-28 15:11:20 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-28 15:11:20 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-28 15:11:20 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 2.18 seconds (JVM running for 3.094)
+2023-12-28 15:11:36 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-28 15:11:36 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2023-12-28 15:11:36 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 8 ms
+2023-12-28 15:11:47 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：你好
+2023-12-28 15:11:51 [task-1] INFO  o.e.c.s.ChatService - [lambda$streamChatCompletion$1,103] - 连接结束
+2023-12-28 15:11:51 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,115] - 收到的完整消息：你好! 有什麼我可以幫你的?
+2023-12-28 15:22:15 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：翻译一段文字 hello world
+2023-12-28 15:22:17 [task-2] INFO  o.e.c.s.ChatService - [lambda$streamChatCompletion$1,103] - 连接结束
+2023-12-28 15:22:17 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,115] - 收到的完整消息：你好，世界
+2023-12-28 15:29:50 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：翻译一段文字 hello world
+2023-12-28 15:29:52 [task-3] INFO  o.e.c.s.ChatService - [lambda$streamChatCompletion$1,103] - 连接结束
+2023-12-28 15:29:52 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,115] - 收到的完整消息：你好，世界
+2023-12-28 15:29:56 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：翻译一段文字 hello world？
+2023-12-28 15:29:57 [task-4] INFO  o.e.c.s.ChatService - [lambda$streamChatCompletion$1,103] - 连接结束
+2023-12-28 15:29:57 [task-4] INFO  o.e.c.s.ChatService - [streamChatCompletion,115] - 收到的完整消息：你好，世界？

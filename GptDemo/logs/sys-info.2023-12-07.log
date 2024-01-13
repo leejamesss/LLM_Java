@@ -1,0 +1,34 @@
+2023-12-07 20:33:10 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.7 on james with PID 38084 (D:\desktop\学业\大二上\Java\Big_hw\GptDemo\target\classes started by 李嘉涛 in D:\desktop\学业\大二上\Java\Big_hw\GptDemo)
+2023-12-07 20:33:10 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-07 20:33:11 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-07 20:33:11 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-07 20:33:11 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-07 20:33:11 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-07 20:33:11 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-07 20:33:11 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 877 ms
+2023-12-07 20:33:12 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-07 20:33:12 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-07 20:33:12 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.751 seconds (JVM running for 2.38)
+2023-12-07 20:47:46 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.7 on james with PID 28320 (D:\desktop\学业\大二上\Java\Big_hw\GptDemo\target\classes started by 李嘉涛 in D:\desktop\学业\大二上\Java\Big_hw\GptDemo)
+2023-12-07 20:47:46 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-07 20:47:47 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-07 20:47:47 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-07 20:47:47 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-07 20:47:47 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-07 20:47:47 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-07 20:47:47 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 589 ms
+2023-12-07 20:47:47 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-07 20:47:47 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-07 20:47:47 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.22 seconds (JVM running for 1.723)
+2023-12-07 20:59:38 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.7 on james with PID 7904 (D:\desktop\学业\大二上\Java\Big_hw\GptDemo\target\classes started by 李嘉涛 in D:\desktop\学业\大二上\Java\Big_hw\GptDemo)
+2023-12-07 20:59:38 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+2023-12-07 20:59:38 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2023-12-07 20:59:38 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2023-12-07 20:59:38 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-07 20:59:38 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2023-12-07 20:59:38 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-07 20:59:38 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2023-12-07 20:59:38 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 642 ms
+2023-12-07 20:59:39 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2023-12-07 20:59:39 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-07 20:59:39 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.267 seconds (JVM running for 1.759)
