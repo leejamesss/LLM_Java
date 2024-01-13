@@ -89,3 +89,13 @@
 
 
 
+## 6.运行说明
+
+1、Spring Boot 运行：首先启动 Spring Boot 主程序(Application.java)，然后在该程序中运行 Spring Boot。
+
+2、访问聊天页面：在浏览器中输入 localhost:8080/chat.html，即可查看并使用聊天功能。
+
+
+
+
+
