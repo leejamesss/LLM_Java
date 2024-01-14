@@ -6,6 +6,41 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "552714",
+      "name": "iconfont-saomaio",
+      "font_class": "iconfont",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "4237181",
+      "name": "上传文件",
+      "font_class": "shangchuanwenjian",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "5434082",
+      "name": "文件上传",
+      "font_class": "wenjianshangchuan",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "5774369",
+      "name": "icon_upload",
+      "font_class": "icon-",
+      "unicode": "e727",
+      "unicode_decimal": 59175
+    },
+    {
+      "icon_id": "35092101",
+      "name": "文件夹-上传",
+      "font_class": "folder-upload-fill",
+      "unicode": "e6f7",
+      "unicode_decimal": 59127
+    },
+    {
       "icon_id": "666885",
       "name": "设置",
       "font_class": "shezhi",
