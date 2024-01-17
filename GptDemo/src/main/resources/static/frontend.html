@@ -6,14 +6,31 @@
     <link rel="stylesheet" href="lib/element-ui/index.css">
     <link rel="stylesheet" href="iconfont/iconfont.css" >
     <style type="text/css">
+        .history{
+            position: fixed;
+            width: 15%;
+            height: 100%;
+            float: left;
+            background: linear-gradient(180deg,rgb(238,233,236) ,rgb(221,221,245));
+        }
+        .main-body{
+            width: 85%;
+            height: 100%;
+            float: right;
+        }
         a{
             text-decoration: none;
+        }
+
+        h2{
+            text-align: center;
+            margin-top: 30px;
         }
         
         body{
             background-color: #f0f0f0;
             background: linear-gradient(90deg, rgb(238, 237, 243) 0%, 0.77381%, rgb(239, 238, 244) 1.54762%, 6.72619%, rgb(239, 236, 243) 11.9048%, 12.381%, rgb(240, 237, 244) 12.8571%, 27.9167%, rgb(242, 236, 244) 42.9762%, 51.9048%, rgb(239, 236, 243) 60.8333%, 61.9643%, rgb(238, 235, 246) 63.0952%, 66.7262%, rgb(235, 234, 249) 70.3571%, 73.2738%, rgb(232, 232, 248) 76.1905%, 77.1429%, rgb(230, 231, 248) 78.0952%, 79.9405%, rgb(228, 229, 249) 81.7857%, 84.1667%, rgb(227, 228, 248) 86.5476%, 87.0238%, rgb(226, 227, 248) 87.5%, 89.3452%, rgb(224, 224, 252) 91.1905%, 95.5952%, rgb(220, 223, 252) 100%);
-
+            margin: 0;
         }
 
         #echoCard{
@@ -33,13 +50,13 @@
             position: fixed;
             padding-top: 20px;
             padding-bottom: 20px;
-            width:100%;
+            width:90%;
             display: flex;
             bottom:0;
             border: none;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(90deg, rgb(238, 237, 243) 0%, 0.77381%, rgb(239, 238, 244) 1.54762%, 6.72619%, rgb(239, 236, 243) 11.9048%, 12.381%, rgb(240, 237, 244) 12.8571%, 27.9167%, rgb(242, 236, 244) 42.9762%, 51.9048%, rgb(239, 236, 243) 60.8333%, 61.9643%, rgb(238, 235, 246) 63.0952%, 66.7262%, rgb(235, 234, 249) 70.3571%, 73.2738%, rgb(232, 232, 248) 76.1905%, 77.1429%, rgb(230, 231, 248) 78.0952%, 79.9405%, rgb(228, 229, 249) 81.7857%, 84.1667%, rgb(227, 228, 248) 86.5476%, 87.0238%, rgb(226, 227, 248) 87.5%, 89.3452%, rgb(224, 224, 252) 91.1905%, 95.5952%, rgb(220, 223, 252) 100%);
+            background: inherit;
             z-index: 1;
         }
 
@@ -150,6 +167,18 @@
             justify-items: center;
             align-items: center;
         }
+        
+        ul.history-list{
+            list-style-image: url('img/icon-liaotian.png');            
+        }
+
+        ul.history-list li {
+            margin-bottom: 20px;
+        }
+        h2{
+            font-family: '华文行楷';
+            font-weight: 500;
+        }
 
     </style>
 
@@ -157,36 +186,49 @@
     <script src="lib/vue/vue.min.js"></script>
     <script src="lib/element-ui/index.js"></script>
 </head>
-<div class="nav clearfix">
-    <div class="main fl">
-        <a class=item href="">信息抽取</a>
-        <a class=item href="">翻译</a>
-        <a class=item href="">其他功能</a>
-    </div>
+<div class="history">
+    <h2>
+        历史会话
+    </h2>
+    <ul class="history-list">
+        <!--test-->
+        <li><a href="">test1</a></li>
+        <li><a href="">test2</a></li>
+        <li><a href="">test3</a></li>
+    </ul>
 </div>
-<h1 align="center">ChatGpt测试</h1>
-<div id="chatWindow">
-    <el-row id="outputArea">
-        <el-card id="echoCard">
-            <div id="echoBody">
-                <div id="echoTxt"></div>
-                <img v-if="blink" class="cursor-img" src="img/cursor-text-blink.gif" v-show="cursorImgVisible">
-                <img v-if="!blink" class="cursor-img" src="img/cursor-text-black.png" v-show="cursorImgVisible">
-            </div>
-        </el-card>
-    </el-row>
-    <el-row id="inputArea">
-        <el-col :span="18">
-            <el-input id="sendTxt" type="textarea" v-model="input" placeholder="请输入内容" @keyup.native="keyUp" resize="none"  :autosize="{minRows:2,maxRows:2}"></el-input>
-            <el-upload ref="upload" action=""  :limit="3" class="iconfont" :on-preview="handlePreview" 
-            :on-remove="handleRemove" :before-remove="beforeRemove" :auto-upload="false" :on-exceed="handleExceed"
-            :file-list="fileList" :on-change="OnChange">&#xe727;</el-upload>
-           <el-button id="submitBtn" type="primary" @click="uploadFiles" v-show="hasFile">上传</el-button>
-        </el-col>
-        <el-col :span="3">
-            <el-button id="sendBtn" type="primary" :disabled="sendBtnDisabled" @click="sendMsg">发送消息</el-button>
-        </el-col>
-    </el-row>
+<div class="main-body">
+    <div class="nav clearfix">
+        <div class="main fl">
+            <a class=item href="">信息抽取</a>
+            <a class=item href="">翻译</a>
+            <a class=item href="">其他功能</a>
+        </div>
+    </div>
+    <h1 align="center">ChatGpt测试</h1>
+    <div id="chatWindow">
+        <el-row id="outputArea">
+            <el-card id="echoCard">
+                <div id="echoBody">
+                    <div id="echoTxt"></div>
+                    <img v-if="blink" class="cursor-img" src="img/cursor-text-blink.gif" v-show="cursorImgVisible">
+                    <img v-if="!blink" class="cursor-img" src="img/cursor-text-black.png" v-show="cursorImgVisible">
+                </div>
+            </el-card>
+        </el-row>
+        <el-row id="inputArea">
+            <el-col :span="18">
+                <el-input id="sendTxt" type="textarea" v-model="input" placeholder="请输入内容" @keyup.native="keyUp" resize="none"  :autosize="{minRows:2,maxRows:2}"></el-input>
+                <el-upload ref="upload" action=""  :limit="3" class="iconfont" :on-preview="handlePreview" 
+                :on-remove="handleRemove" :before-remove="beforeRemove" :auto-upload="false" :on-exceed="handleExceed"
+                :file-list="fileList" :on-change="OnChange">&#xe727;</el-upload>
+            <el-button id="submitBtn" type="primary" @click="uploadFiles" v-show="hasFile">上传</el-button>
+            </el-col>
+            <el-col :span="3">
+                <el-button id="sendBtn" type="primary" :disabled="sendBtnDisabled" @click="sendMsg">发送消息</el-button>
+            </el-col>
+        </el-row>
+    </div>
 </div>
 
 </body>
