@@ -8,6 +8,7 @@ import com.theokanning.openai.completion.chat.ChatCompletionRequest;
 import com.theokanning.openai.completion.chat.ChatMessage;
 import com.theokanning.openai.completion.chat.ChatMessageRole;
 import com.theokanning.openai.service.OpenAiService;
+import javabean.LogForDB;
 import okhttp3.OkHttpClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -53,7 +54,9 @@ public class ChatService {
      */
     @Async
     public void streamChatCompletion(String prompt, SseEmitter sseEmitter) {
+        LogForDB logForDB = new LogForDB();
         LOG.info("发送消息：" + prompt);
+
         final List<ChatMessage> messages = new ArrayList<>();
         final ChatMessage systemMessage = new ChatMessage(ChatMessageRole.SYSTEM.value(), prompt);
         messages.add(systemMessage);
@@ -84,7 +87,6 @@ public class ChatService {
                 //异常结束
                 .doOnError(throwable -> {
                     LOG.error("连接异常", throwable);
-
                     //发送连接关闭事件，让客户端主动断开连接避免重连
                     sendStopEvent(sseEmitter);
 
@@ -113,15 +115,15 @@ public class ChatService {
                     receiveMsgBuilder.append(content);
                 });
         LOG.info("收到的完整消息：" + receiveMsgBuilder);
+        logForDB.log2DB("Chat", prompt, receiveMsgBuilder.toString());
+
     }
 
     /**
      * 发送连接关闭事件，让客户端主动断开连接避免重连
      *
-     * @param sseEmitter
-     * @throws IOException
      */
-    private static void sendStopEvent(SseEmitter sseEmitter) throws IOException {
+    static void sendStopEvent(SseEmitter sseEmitter) throws IOException {
         sseEmitter.send(SseEmitter.event().name("stop").data(""));
     }
 
@@ -148,7 +150,6 @@ public class ChatService {
         ObjectMapper mapper = defaultObjectMapper();
         Retrofit retrofit = defaultRetrofit(client, mapper);
         OpenAiApi api = retrofit.create(OpenAiApi.class);
-        OpenAiService service = new OpenAiService(api, client.dispatcher().executorService());
-        return service;
+        return new OpenAiService(api, client.dispatcher().executorService());
     }
 }

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>给GPT一点小小的信管震撼</title>
+    <link rel="stylesheet" href="lib/element-ui/index.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css" >
+    <style type="text/css">
+        .history{
+            position: fixed;
+            width: 15%;
+            height: 100%;
+            float: left;
+            background: linear-gradient(180deg,rgb(238,233,236) ,rgb(221,221,245));
+        }
+        .main-body{
+            width: 85%;
+            height: 100%;
+            float: right;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        h2{
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        body{
+            background-color: #f0f0f0;
+            background: linear-gradient(90deg, rgb(238, 237, 243) 0%, 0.77381%, rgb(239, 238, 244) 1.54762%, 6.72619%, rgb(239, 236, 243) 11.9048%, 12.381%, rgb(240, 237, 244) 12.8571%, 27.9167%, rgb(242, 236, 244) 42.9762%, 51.9048%, rgb(239, 236, 243) 60.8333%, 61.9643%, rgb(238, 235, 246) 63.0952%, 66.7262%, rgb(235, 234, 249) 70.3571%, 73.2738%, rgb(232, 232, 248) 76.1905%, 77.1429%, rgb(230, 231, 248) 78.0952%, 79.9405%, rgb(228, 229, 249) 81.7857%, 84.1667%, rgb(227, 228, 248) 86.5476%, 87.0238%, rgb(226, 227, 248) 87.5%, 89.3452%, rgb(224, 224, 252) 91.1905%, 95.5952%, rgb(220, 223, 252) 100%);
+            margin: 0;
+        }
+
+        #echoCard{
+            margin-left: 2.5%;
+            width:95%;
+            height: auto;
+            overflow:auto;
+        }
+
+        #echoBody{
+            margin-left: 2.5%;
+            width:95%;
+            line-height:30px;
+        }
+
+        #inputArea{
+            position: fixed;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width:90%;
+            display: flex;
+            bottom:0;
+            border: none;
+            align-items: center;
+            justify-content: center;
+            background: inherit;
+            z-index: 1;
+        }
+
+        #sendBtn{
+            margin-left: 10px;
+        }
+
+        .el-col-18{
+            background-color: #fff;
+            border-radius: 15px;
+        }
+
+        .el-col-18 .el-input__inner{
+            border: none;
+            border-radius: 15px;
+            color: #000;
+        }
+
+        .el-textarea{
+            font-size: 16px;
+        }
+        .el-textarea__inner{
+            border: none;
+            border-radius: 15px;
+        }
+
+        #echoCard{
+            background-color: inherit;
+            box-shadow: none;
+            border: none;
+        }
+
+
+
+        .cursor-img{
+            height:24px;
+            vertical-align: text-bottom;
+        }
+
+        .fl{
+            float: left;
+        }
+        .fr{
+            float: right;
+        }
+        .clearfix:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .nav{
+            height: 50px;
+        }
+        .nav .main{
+            margin-left: 70%;
+            height: 50px;
+            line-height: 50px;
+        }
+        .nav .main a{
+            margin: 0 12px;
+        }
+        .item{
+            font-size: 20px;
+            color:#000;
+        }
+        .inputEcho{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-bottom: 20px;
+        }
+        .inputEcho .text,.outputEcho .text{
+            border-radius: 10px;
+            padding: 10px 20px;
+            background-color: #88297b;
+            margin-right: 20px;
+            margin-left: 20px;
+            color: #fff;
+            max-width: 42%;
+            word-break: break-all;
+        }
+
+        .outputEcho{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .iconfont{
+            margin: 20px 20px;
+            display: block;
+            font-size: 20px;
+        }
+
+        #echoBody{
+            margin-bottom: 15%;
+        }
+
+        #submitBtn{
+            display: block;
+            margin-bottom: 10px;
+            margin-right: 20px;
+            float: right;
+        }
+
+        .el-upload-list{
+            display: flex;
+            justify-items: center;
+            align-items: center;
+        }
+
+        ul.history-list{
+            list-style-image: url('img/icon-liaotian.png');
+        }
+
+        ul.history-list li {
+            margin-bottom: 20px;
+        }
+        h2{
+            font-family: '华文行楷';
+            font-weight: 500;
+        }
+        #aste{
+            text-decoration: underline #3a8ee6;
+            color: #3a8ee6;
+        }
+
+    </style>
+
+    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="lib/vue/vue.min.js"></script>
+    <script src="lib/element-ui/index.js"></script>
+</head>
+<div class="history">
+    <h2>
+        历史会话
+    </h2>
+    <ul class="history-list">
+        <!--test-->
+        <li><a href="">test1</a></li>
+        <li><a href="">test2</a></li>
+        <li><a href="">test3</a></li>
+    </ul>
+</div>
+
+<div class="main-body">
+    <div class="nav clearfix">
+        <div class="main fl">
+            <a class=item id="aste" href="ASTE.html">信息抽取</a>
+            <a class=item id="translate" href="translate.html">翻译</a>
+            <a class=item id="other" href="">其他功能</a>
+        </div>
+    </div>
+    <h1 align="center">ChatGpt测试</h1>
+    <div id="chatWindow">
+        <el-row id="outputArea">
+            <el-card id="echoCard">
+                <div id="echoBody">
+                    <div id="echoTxt"></div>
+                    <img v-if="blink" class="cursor-img" src="img/cursor-text-blink.gif" v-show="cursorImgVisible">
+                    <img v-if="!blink" class="cursor-img" src="img/cursor-text-black.png" v-show="cursorImgVisible">
+                </div>
+            </el-card>
+        </el-row>
+        <el-row id="inputArea">
+            <el-col :span="18">
+                <el-input id="sendTxt" type="textarea" v-model="input" placeholder="请输入内容" @keyup.native="keyUp" resize="none"  :autosize="{minRows:2,maxRows:2}"></el-input>
+                <el-upload ref="upload" action=""  :limit="3" class="iconfont" :on-preview="handlePreview"
+                           :on-remove="handleRemove" :before-remove="beforeRemove" :auto-upload="false" :on-exceed="handleExceed"
+                           :file-list="fileList" :on-change="OnChange">&#xe727;</el-upload>
+                <el-button id="submitBtn" type="primary" @click="uploadFiles" v-show="hasFile">上传</el-button>
+            </el-col>
+            <el-col :span="3">
+                <el-button id="sendBtn" type="primary" :disabled="sendBtnDisabled" @click="sendMsg">发送消息</el-button>
+            </el-col>
+        </el-row>
+    </div>
+</div>
+
+</body>
+<script type="text/javascript">
+    //vue样式渲染到网页上
+    var app = new Vue({
+        el: '#chatWindow',
+        data: {
+            input: '',
+            sendBtnDisabled: false,
+            cursorImgVisible: false,
+            blink: true,
+            hasFile: false,
+            fileList:[]
+        },
+        mounted: function(){
+
+        },
+        methods: {
+            keyUp: function(event){
+                if(event.keyCode==13){
+                    this.sendMsg();
+                }
+            },
+            //用于处理文件上传
+            handleRemove:function(file,fileList){
+                console.log(file,fileList);
+                if(fileList.length == 0)this.hasFile = false;
+            },
+            handlePreview:function(file){
+                console.log(file);
+            },
+            handleExceed:function(files,fileList){
+                this.$message.warning(`当前限选3个文件，本次选择了${files.length}个文件，共选择了${files.length+fileList.length}个文件`);
+            },
+            beforeRemove:function(file,fileList){
+                return this.$confirm(`确认移除${file.name}？`)
+            },
+            //文件列表上传功能未实现，可能需要调整一下
+            uploadFiles: function(){
+                var newFile = new FormData();
+                this.fileList.forEach((item,index) => {
+                    newFile.append("file",item.raw)
+                });
+                this.$refs.upload.submit();
+            },
+            OnChange:function(file,fileList){
+                console.log('OnChange-fileList',file,fileList);
+
+                this.fileList = fileList;
+                if(fileList.length>0)this.hasFile=true;
+                else{
+                    this.hasFile = false;
+                }
+            },
+
+
+            sendMsg: function(){
+                var that = this;
+
+                //初始化一些状态
+                // $('#outputTxt').html('');
+                var sendTxt = $('#sendTxt').val();
+                if(sendTxt == '' || sendTxt=='\n')return;
+                $('#echoTxt').append("<div class='inputEcho'><span class='text'>"+sendTxt+"</span></div>");
+
+                $('#sendTxt').val('');
+                that.sendBtnDisabled = true;
+                that.cursorImgVisible = true;
+                //content = "====================================================================================================================================================================================================================================================================================";
+                // var echoTxt = $('#echoTxt');
+                // echoTxt.append("<div class='outputEcho'><span class='text'>"+content+"</span></div>");
+
+                //GPT回复结果应放在echoTxt.append("<div class='outputEcho'><span class='text'>"+content+"</span></div>");的content中
+
+                //发送请求
+                $.ajax({
+                    type: "post",
+                    url:"/aste/sendMsg",
+                    data:{
+                        msg: sendTxt
+                    },
+                    contentType: 'application/x-www-form-urlencoded',
+                    success:function(data){
+                        var eventSource = new EventSource('/aste/conversation/'+data)
+                        eventSource.addEventListener('open', function(e) {
+                            console.log("EventSource连接成功");
+                        });
+
+                        var blinkTimeout = null;
+                        eventSource.addEventListener("message", function(evt){
+                            var data = evt.data;
+                            // var json = JSON.parse(data);
+                            // var content = data.content ? data.content : '';
+                            // content = content.replaceAll('\n','<br/>');
+                            console.log(data)
+
+                            var echoTxt = $('#echoTxt');
+                            echoTxt.append(data);
+                            var echoCard = $('#echoCard');
+
+                            var scrollHeight = echoCard[0].scrollHeight;
+                            echoCard.scrollTop(scrollHeight);
+
+                            //光标不闪烁
+                            that.blink = false;
+                            window.clearTimeout(blinkTimeout);
+
+                            //光标200毫秒后开始闪烁
+                            blinkTimeout = window.setTimeout(function(){
+                                that.blink = true;
+                            }, 200)
+                        });
+                        eventSource.addEventListener('error', function (e) {
+                            console.log("EventSource连接异常");
+                            if (e.target.readyState === EventSource.CLOSED) {
+                                console.log('Disconnected');
+                            } else if (e.target.readyState === EventSource.CONNECTING) {
+                                console.log('Connecting...');
+                            }
+                        });
+
+                        //自定义 EventHandler，在收到 event 字段为 stop 的消息时触发, 在这里我们将SSE关闭
+                        eventSource.addEventListener('stop', e => {
+                            console.log('EventSource连接结束');
+
+                            //关闭连接（只有关闭后才不会一直重连）
+                            eventSource.close();
+
+                            //启用发送按钮
+                            that.sendBtnDisabled = false;
+
+                            //闪烁图标不可见
+                            that.cursorImgVisible = false;
+                        }, false);
+                    },
+                    error: function(){
+                        //启用发送按钮
+                        that.sendBtnDisabled = false;
+                        //闪烁图标不可见
+                        that.cursorImgVisible = false;
+                    }
+                });
+            }
+        }
+    })
+
+
+
+
+</script>
+</html>
