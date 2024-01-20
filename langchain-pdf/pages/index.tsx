@@ -17,6 +17,11 @@ export default function Home() {
   const [query, setQuery] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
+  // const [file,setFile] = useState<File | null>(null);
+  // const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   setFile(e.target.files ? e.target.files[0] : null);
+  // };
+
   const [messageState, setMessageState] = useState<{
     messages: Message[];
     pending?: string;
@@ -69,6 +74,16 @@ export default function Home() {
     setQuery('');
 
     try {
+      // const formData = new FormData();
+      // if (file){
+      //   formData.append('file', file);
+      // }
+      // formData.append('question', question);
+      // formData.append('history', JSON.stringify(history));
+      // const response = await fetch('/api/chat', {
+      //   method: 'POST',
+      //   body: formData,
+      // });
       const response = await fetch('/api/chat', {
         method: 'POST',
         headers: {
@@ -230,6 +245,13 @@ export default function Home() {
                     onChange={(e) => setQuery(e.target.value)}
                     className={styles.textarea}
                   />
+{/* 
+                  <div className={styles.fileUpload}>
+                  <input type="file" onChange={handleFileChange} id="fileUploadInput"/>
+                  <label htmlFor="fileUploadInput" className={styles.fileUploadLabel}>
+                    选择文件
+                  </label>
+                  </div> */}
                   <button
                     type="submit"
                     disabled={loading}
@@ -240,7 +262,6 @@ export default function Home() {
                         <LoadingDots color="#000" />
                       </div>
                     ) : (
-                      // Send icon SVG in input field
                       <svg
                         viewBox="0 0 20 20"
                         className={styles.svgicon}

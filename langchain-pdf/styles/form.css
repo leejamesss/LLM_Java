@@ -1,0 +1,17 @@
+.fileUpload {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+#fileUploadInput {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.fileUploadLabel {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}

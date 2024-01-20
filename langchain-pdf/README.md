@@ -16,6 +16,10 @@
 然后运行：
 
 ```
+npm install multer
+```
+
+```
 yarn install
 ```
 

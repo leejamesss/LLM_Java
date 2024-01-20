@@ -1,10 +1,29 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
+import multer from 'multer';
+import path from 'path';
 import type { Document } from 'langchain/document';
 import { OpenAIEmbeddings } from 'langchain/embeddings/openai';
 import { PineconeStore } from 'langchain/vectorstores/pinecone';
 import { makeChain } from '@/utils/makechain';
 import { pinecone } from '@/utils/pinecone-client';
 import { PINECONE_INDEX_NAME, PINECONE_NAME_SPACE } from '@/config/pinecone';
+
+
+
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, path.join(process.cwd(), 'docs'))
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.originalname)
+  }
+})
+
+const upload = multer({ storage: storage });
+
+
+
+
 
 export default async function handler(
   req: NextApiRequest,
@@ -20,6 +39,12 @@ export default async function handler(
     res.status(405).json({ error: 'Method not allowed' });
     return;
   }
+  upload.single('file')(req as any,res as any,(err)=>{
+    if (err){
+      return res.status(500).json({ error: err.message});
+    }
+  });
+
 
   if (!question) {
     return res.status(400).json({ message: 'No question in the request' });
@@ -29,7 +54,7 @@ export default async function handler(
 
   try {
     const index = pinecone.Index(PINECONE_INDEX_NAME);
-
+    
     /* create vectorstore*/
     const vectorStore = await PineconeStore.fromExistingIndex(
       new OpenAIEmbeddings({}),
@@ -80,6 +105,7 @@ export default async function handler(
     res.status(500).json({ error: error.message || 'Something went wrong' });
   }
 }
+
 
 
 
