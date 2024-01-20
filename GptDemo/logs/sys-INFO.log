@@ -1,89 +1,45 @@
-2024-01-17 15:39:11 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.7 on james with PID 13684 (D:\desktop\学业\大二上\Java\Big_hw\main\GptDemo\target\classes started by 李嘉涛 in D:\desktop\学业\大二上\Java\Big_hw\main\GptDemo)
-2024-01-17 15:39:11 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
-2024-01-17 15:39:12 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
-2024-01-17 15:39:12 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
-2024-01-17 15:39:12 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
-2024-01-17 15:39:12 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
-2024-01-17 15:39:12 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-2024-01-17 15:39:12 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 1142 ms
-2024-01-17 15:39:12 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - [<init>,53] - Adding welcome page: class path resource [static/index.html]
-2024-01-17 15:39:13 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
-2024-01-17 15:39:13 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
-2024-01-17 15:39:13 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 2.473 seconds (JVM running for 3.365)
-2024-01-17 15:39:28 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-01-17 15:39:28 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
-2024-01-17 15:39:28 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 0 ms
-2024-01-17 15:39:42 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：hi
-2024-01-17 15:39:55 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：hi
-2024-01-17 15:39:58 [task-2] INFO  o.e.c.s.ChatService - [lambda$1,103] - 连接结束
-2024-01-17 15:39:58 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,115] - 收到的完整消息：How can I assist you today?
-2024-01-17 15:43:36 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.7 on james with PID 14444 (D:\desktop\学业\大二上\Java\Big_hw\main\GptDemo\target\classes started by 李嘉涛 in D:\desktop\学业\大二上\Java\Big_hw\main\GptDemo)
-2024-01-17 15:43:36 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
-2024-01-17 15:43:38 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
-2024-01-17 15:43:38 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
-2024-01-17 15:43:38 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
-2024-01-17 15:43:38 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
-2024-01-17 15:43:38 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-2024-01-17 15:43:38 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 1289 ms
-2024-01-17 15:43:38 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - [<init>,53] - Adding welcome page: class path resource [static/index.html]
-2024-01-17 15:43:38 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
-2024-01-17 15:43:39 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
-2024-01-17 15:43:39 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 2.491 seconds (JVM running for 3.287)
-2024-01-17 20:38:20 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.7 on james with PID 27404 (D:\desktop\学业\大二上\Java\Big_hw\main\GptDemo\target\classes started by 李嘉涛 in D:\desktop\学业\大二上\Java\Big_hw\main\GptDemo)
-2024-01-17 20:38:20 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
-2024-01-17 20:38:21 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
-2024-01-17 20:38:21 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
-2024-01-17 20:38:21 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
-2024-01-17 20:38:21 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
-2024-01-17 20:38:21 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-2024-01-17 20:38:21 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 1210 ms
-2024-01-17 20:38:22 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - [<init>,53] - Adding welcome page: class path resource [static/index.html]
-2024-01-17 20:38:22 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
-2024-01-17 20:38:22 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
-2024-01-17 20:38:22 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 2.377 seconds (JVM running for 3.637)
-2024-01-17 20:38:24 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-01-17 20:38:24 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
-2024-01-17 20:38:24 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
-2024-01-17 20:40:45 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.7 on james with PID 21032 (D:\desktop\学业\大二上\Java\Big_hw\main\GptDemo\target\classes started by 李嘉涛 in D:\desktop\学业\大二上\Java\Big_hw\main\GptDemo)
-2024-01-17 20:40:45 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
-2024-01-17 20:40:46 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
-2024-01-17 20:40:46 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
-2024-01-17 20:40:46 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
-2024-01-17 20:40:46 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
-2024-01-17 20:40:47 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-2024-01-17 20:40:47 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 984 ms
-2024-01-17 20:40:47 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - [<init>,53] - Adding welcome page: class path resource [static/index.html]
-2024-01-17 20:40:47 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
-2024-01-17 20:40:47 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
-2024-01-17 20:40:47 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 2.097 seconds (JVM running for 2.929)
-2024-01-17 20:40:48 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-01-17 20:40:48 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
-2024-01-17 20:40:48 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 3 ms
-2024-01-17 20:40:54 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：hi
-2024-01-17 20:40:58 [task-1] INFO  o.e.c.s.ChatService - [lambda$1,103] - 连接结束
-2024-01-17 20:40:58 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,115] - 收到的完整消息：Hello! How can I assist you today?
-2024-01-17 20:42:21 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.7 on james with PID 25652 (D:\desktop\学业\大二上\Java\Big_hw\main\GptDemo\target\classes started by 李嘉涛 in D:\desktop\学业\大二上\Java\Big_hw\main\GptDemo)
-2024-01-17 20:42:21 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
-2024-01-17 20:42:22 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
-2024-01-17 20:42:22 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
-2024-01-17 20:42:22 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
-2024-01-17 20:42:22 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
-2024-01-17 20:42:22 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-2024-01-17 20:42:22 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 978 ms
-2024-01-17 20:42:23 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - [<init>,53] - Adding welcome page: class path resource [static/index.html]
-2024-01-17 20:42:23 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
-2024-01-17 20:42:23 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
-2024-01-17 20:42:23 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 2.107 seconds (JVM running for 3.078)
-2024-01-17 20:42:23 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-01-17 20:42:23 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
-2024-01-17 20:42:23 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 2 ms
-2024-01-17 20:42:29 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：hi
+2024-01-20 10:10:47 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.7 on james with PID 9284 (D:\desktop\学业\大二上\Java\Big_hw\main\GptDemo\target\classes started by 李嘉涛 in D:\desktop\学业\大二上\Java\Big_hw\main\GptDemo)
+2024-01-20 10:10:47 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2024-01-20 10:10:48 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2024-01-20 10:10:48 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-20 10:10:48 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2024-01-20 10:10:48 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-01-20 10:10:48 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2024-01-20 10:10:48 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 751 ms
+2024-01-20 10:10:48 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - [<init>,53] - Adding welcome page: class path resource [static/index.html]
+2024-01-20 10:10:48 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2024-01-20 10:10:48 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-20 10:10:48 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.599 seconds (JVM running for 2.311)
+2024-01-20 10:11:05 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-20 10:11:05 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2024-01-20 10:11:05 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2024-01-20 10:11:38 [task-1] INFO  o.e.c.s.ChatService - [asteCompletion,58] - 发送消息：我爱您
+2024-01-20 10:11:40 [task-1] INFO  o.e.c.s.ChatService - [asteCompletion,88] - 收到的完整消息：无-无-我爱
+2024-01-20 10:11:40 [task-1] INFO  o.e.c.s.ChatService - [asteCompletion,91] - 连接结束
+2024-01-20 10:11:49 [task-2] INFO  o.e.c.s.ChatService - [translateCompletion,56] - 发送消息：hi
 
-2024-01-17 20:42:33 [task-1] INFO  o.e.c.s.ChatService - [lambda$1,103] - 连接结束
-2024-01-17 20:42:33 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,115] - 收到的完整消息：Hello! How can I assist you today?
-2024-01-17 20:42:45 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：hi
+2024-01-20 10:11:51 [task-2] INFO  o.e.c.s.ChatService - [translateCompletion,86] - 收到的完整消息：你好”。
+2024-01-20 10:11:51 [task-2] INFO  o.e.c.s.ChatService - [translateCompletion,89] - 连接结束
+2024-01-20 10:24:26 [main] INFO  o.e.c.Application - [logStarting,55] - Starting Application using Java 17.0.7 on james with PID 22772 (D:\desktop\学业\大二上\Java\Big_hw\main\GptDemo\target\classes started by 李嘉涛 in D:\desktop\学业\大二上\Java\Big_hw\main\GptDemo)
+2024-01-20 10:24:26 [main] INFO  o.e.c.Application - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+2024-01-20 10:24:27 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 8080 (http)
+2024-01-20 10:24:27 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-20 10:24:27 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2024-01-20 10:24:27 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2024-01-20 10:24:27 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2024-01-20 10:24:27 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,292] - Root WebApplicationContext: initialization completed in 620 ms
+2024-01-20 10:24:27 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - [<init>,53] - Adding welcome page: class path resource [static/index.html]
+2024-01-20 10:24:27 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2024-01-20 10:24:27 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-20 10:24:27 [main] INFO  o.e.c.Application - [logStarted,61] - Started Application in 1.322 seconds (JVM running for 1.844)
+2024-01-20 10:24:35 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-20 10:24:35 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2024-01-20 10:24:35 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 1 ms
+2024-01-20 10:24:39 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,58] - 发送消息：hi
 
-2024-01-17 20:43:01 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,56] - 发送消息：hi
+2024-01-20 10:24:41 [task-1] INFO  o.e.c.s.ChatService - [lambda$streamChatCompletion$1,105] - 连接结束
+2024-01-20 10:24:41 [task-1] INFO  o.e.c.s.ChatService - [streamChatCompletion,117] - 收到的完整消息：Hello! How can I help you today?
+2024-01-20 10:27:35 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,58] - 发送消息：hello
 
-2024-01-17 20:43:04 [task-3] INFO  o.e.c.s.ChatService - [lambda$1,103] - 连接结束
-2024-01-17 20:43:04 [task-3] INFO  o.e.c.s.ChatService - [streamChatCompletion,115] - 收到的完整消息：Hello! How can I assist you today?
+2024-01-20 10:27:37 [task-2] INFO  o.e.c.s.ChatService - [lambda$streamChatCompletion$1,105] - 连接结束
+2024-01-20 10:27:37 [task-2] INFO  o.e.c.s.ChatService - [streamChatCompletion,117] - 收到的完整消息：Hello! How can I assist you today?
