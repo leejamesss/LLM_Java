@@ -21,10 +21,6 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
-
-
-
-
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse,
@@ -90,13 +86,12 @@ export default async function handler(
       .join('\n');
     console.log(pastMessages);
 
-    //Ask a question using chat history
     const response = await chain.invoke({
       question: sanitizedQuestion,
       chat_history: pastMessages,
     });
-
-    const sourceDocuments = await documentPromise;
+   
+    const sourceDocuments: Document[] = await documentPromise;
 
     console.log('response', response);
     res.status(200).json({ text: response, sourceDocuments });

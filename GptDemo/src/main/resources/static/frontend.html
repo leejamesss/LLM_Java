@@ -32,6 +32,19 @@
         .create-conversation button:hover {
             background-color: #0056b3;
         }
+        
+        .delete-button {
+        background-color: #9d2e26; /* Red */
+        border: none;
+        color: white;
+        padding: 10px 20px; /* Smaller padding */
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px; /* Smaller font size */
+        margin: 4px 2px;
+        cursor: pointer;
+    }
     </style>
 
     <style type="text/css">
@@ -222,31 +235,36 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', (event) => {
-    var app = new Vue({
-        el: '.history',
-        data: {
-            conversations: JSON.parse(localStorage.getItem('conversations') || '[]'),
-            newConversationTitle: ''  // Add this line
-        },
-        methods: {
-            saveConversation: function (conversation) {
-                this.conversations.push(conversation);
-                localStorage.setItem('conversations', JSON.stringify(this.conversations));
+        var app = new Vue({
+            el: '.history',
+            data: {
+                conversations: JSON.parse(localStorage.getItem('conversations') || '[]'),
+                newConversationTitle: ''  // Add this line
             },
-            loadConversation: function (index) {
-                var conversation = this.conversations[index];
-                // Load the conversation into the chat window...
-            },
-            createConversation: function () {  // Add this method
-                var conversation = {
-                    title: this.newConversationTitle,
-                    date: new Date().toISOString(),
-                    messages: []
-                };
-                this.saveConversation(conversation);
-                this.newConversationTitle = '';
+            methods: {
+                saveConversation: function (conversation) {
+                    this.conversations.push(conversation);
+                    localStorage.setItem('conversations', JSON.stringify(this.conversations));
+                },
+                loadConversation: function (index) {
+                    var conversation = this.conversations[index];
+                    // Load the conversation into the chat window...
+                },
+                createConversation: function () {  // Add this method
+                    var conversation = {
+                        title: this.newConversationTitle,
+                        date: new Date().toISOString(),
+                        messages: []
+                    };
+                    this.saveConversation(conversation);
+                    this.newConversationTitle = '';
+                },
+                deleteConversation: function (index) {
+                    this.conversations.splice(index, 1);
+                    localStorage.setItem('conversations', JSON.stringify(this.conversations));
+                }
+                
             }
-        }
         });
     });
 </script>
@@ -264,6 +282,7 @@
     <ul class="history-list">
         <li v-for="(conversation, index) in conversations">
             <a href="#" v-on:click="loadConversation(index)">{{ conversation.title }}</a>
+            <button v-on:click="deleteConversation(index)" class="delete-button">删除</button>
         </li>
     </ul>
 </div>

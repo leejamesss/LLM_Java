@@ -15,7 +15,7 @@
 */
 
 drop database if exists mysqlforllm;
-create database mysqlforllm;
+CREATE DATABASE mysqlforllm CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 use mysqlforllm;
 
@@ -31,6 +31,6 @@ CREATE TABLE `dblogforllm`  (
                                 `Hsts` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
                                 `Hsend` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
                                 `Hrcv` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL
-) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
 
 SET FOREIGN_KEY_CHECKS = 1;
