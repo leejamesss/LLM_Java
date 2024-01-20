@@ -38,7 +38,7 @@ public class LogForDB {
             }
         }
     }
-    private static String retrieveData(Connection connection, String row) throws SQLException {
+    public static String retrieveData(Connection connection, String row) throws SQLException {
         if (Objects.equals(row, "status")){
             String query = "SELECT DISTINCT Hsts FROM dblogforllm WHERE Hno=(SELECT Max(Hno) FROM dblogforllm)";
             try (Statement statement = connection.createStatement();
@@ -49,7 +49,7 @@ public class LogForDB {
                     return resultSet.getString("Hsts");
                 }
             }
-        } else {
+        } else if (Objects.equals(row, "number")) {
             String query = "SELECT Max(Hno) FROM dblogforllm";
             try (Statement statement = connection.createStatement();
                  ResultSet resultSet = statement.executeQuery(query)) {
@@ -57,6 +57,16 @@ public class LogForDB {
                 if (resultSet.next()) {
                     // 根据列名获取数据
                     return ""+resultSet.getInt("Max(Hno)");
+                }
+            }
+        } else {
+            String query = "SELECT COUNT(DISTINCT Hno) FROM dblogforllm";
+            try (Statement statement = connection.createStatement();
+                 ResultSet resultSet = statement.executeQuery(query)) {
+                // 处理查询结果
+                if (resultSet.next()) {
+                    // 根据列名获取数据
+                    return ""+resultSet.getInt("COUNT(DISTINCT Hno)");
                 }
             }
         }

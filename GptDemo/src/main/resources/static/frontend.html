@@ -2,38 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Java程序设计-GPT大作业</title>
+    <title>给GPT一点小小的信管震撼</title>
     <link rel="stylesheet" href="lib/element-ui/index.css">
     <link rel="stylesheet" href="iconfont/iconfont.css" >
-    <style>
-        .create-conversation {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-    
-        .create-conversation input {
-            flex-grow: 1;
-            padding: 5px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-    
-        .create-conversation button {
-            padding: 5px 10px;
-            border: none;
-            border-radius: 4px;
-            background-color: #007BFF;
-            color: white;
-            cursor: pointer;
-        }
-    
-        .create-conversation button:hover {
-            background-color: #0056b3;
-        }
-    </style>
-
     <style type="text/css">
         .history{
             position: fixed;
@@ -214,70 +185,25 @@
     <script src="lib/jquery/jquery-3.6.0.min.js"></script>
     <script src="lib/vue/vue.min.js"></script>
     <script src="lib/element-ui/index.js"></script>
-    <!-- vue.js -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
-
 </head>
-
-
-<script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-    var app = new Vue({
-        el: '.history',
-        data: {
-            conversations: JSON.parse(localStorage.getItem('conversations') || '[]'),
-            newConversationTitle: ''  // Add this line
-        },
-        methods: {
-            saveConversation: function (conversation) {
-                this.conversations.push(conversation);
-                localStorage.setItem('conversations', JSON.stringify(this.conversations));
-            },
-            loadConversation: function (index) {
-                var conversation = this.conversations[index];
-                // Load the conversation into the chat window...
-            },
-            createConversation: function () {  // Add this method
-                var conversation = {
-                    title: this.newConversationTitle,
-                    date: new Date().toISOString(),
-                    messages: []
-                };
-                this.saveConversation(conversation);
-                this.newConversationTitle = '';
-            }
-        }
-        });
-    });
-</script>
-
 <div class="history">
     <h2>
         历史会话
     </h2>
-    <div>
-        <div class="create-conversation">
-            <input v-model="newConversationTitle" placeholder="Enter title for new conversation">
-            <button v-on:click="createConversation">创建会话</button>
-        </div>
-    </div>
     <ul class="history-list">
-        <li v-for="(conversation, index) in conversations">
-            <a href="#" v-on:click="loadConversation(index)">{{ conversation.title }}</a>
-        </li>
+
     </ul>
 </div>
-
 
 <div class="main-body">
     <div class="nav clearfix">
         <div class="main fl">
             <a class=item id="aste" href="ASTE.html">信息抽取</a>
             <a class=item id="translate" href="translate.html">翻译</a>
-            <a class=item id="other" href="http://localhost:3000/">其他功能</a>
+            <a class=item id="other" href="">其他功能</a>
         </div>
     </div>
-    <h1 align="center">ChatGPT-自由对话</h1>
+    <h1 align="center">ChatGpt测试</h1>
     <div id="chatWindow">
         <el-row id="outputArea">
             <el-card id="echoCard">
@@ -391,14 +317,15 @@
                         });
 
                         var blinkTimeout = null;
-                        var gptResponses = ''; 
                         eventSource.addEventListener("message", function(evt){
                             var data = evt.data;
                             var json = JSON.parse(data);
                             var content = json.content ? json.content : '';
                             content = content.replaceAll('\n','<br/>');
                             console.log(json)
-                            gptResponses += content;
+
+                            var echoTxt = $('#echoTxt');
+                            echoTxt.append(content);
                             var echoCard = $('#echoCard');
 
                             var scrollHeight = echoCard[0].scrollHeight;
@@ -424,22 +351,6 @@
 
                         //自定义 EventHandler，在收到 event 字段为 stop 的消息时触发, 在这里我们将SSE关闭
                         eventSource.addEventListener('stop', e => {
-                            // //会话1，会话2，...，会话n
-                            // var conversations = JSON.parse(localStorage.getItem('conversations') || '[]');
-                            // var conversation = {
-                            //     title: '会话' + (conversations.length + 1),
-                            //     date: new Date().toISOString(),
-                            //     messages: [
-                            //         { from: 'user', text: sendTxt },
-                            //         { from: 'chatgpt', text: gptResponses }
-                            //     ]
-                            // };
-                            // that.saveConversation(conversation);
-
-                            var echoTxt = $('#echoTxt');
-                            echoTxt.append("<div class='outputEcho'><span class='text'>" + gptResponses + "</span></div>"); // Append the stored responses to the output area
-                            gptResponses = ''; // Clear the stored responses
-                            
                             console.log('EventSource连接结束');
 
                             //关闭连接（只有关闭后才不会一直重连）
@@ -462,9 +373,38 @@
             }
         }
     })
+    function createDynamicLinks() {
+        // Make an Ajax request to Spring Boot endpoint (replace with your actual endpoint)
+        fetch('/history')
+            .then(response => response.json())
+            .then(data => {
+                // Get the dynamicLinks ul element
+                const dynamicLinksUl = document.querySelector('.history-list');
 
+                // Iterate through the numbers received from Spring Boot
+                for(let i = 1; i<=data; i++){
+                    // Create a new list item and hyperlink
+                    const listItem = document.createElement('li');
+                    const hyperlink = document.createElement('a');
 
+                    // Set the href attribute (you can customize the link as needed)
+                    hyperlink.href = 'historyChat/'+i;
 
+                    // Set the link text to the number
+                    hyperlink.textContent = '历史 '+i;
+
+                    // Append the hyperlink to the list item, and the list item to the ul
+                    listItem.appendChild(hyperlink);
+                    // dynamicLinksUl.appendChild(listItem);
+                    dynamicLinksUl.appendChild(listItem);
+                }
+
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    }
+
+    // Call the function to create dynamic links when the page loads
+    document.addEventListener('DOMContentLoaded', createDynamicLinks);
 
 </script>
 </html>

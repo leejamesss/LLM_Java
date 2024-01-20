@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Java程序设计-GPT大作业</title>
+    <title>给GPT一点小小的信管震撼</title>
     <link rel="stylesheet" href="lib/element-ui/index.css">
     <link rel="stylesheet" href="iconfont/iconfont.css" >
     <style type="text/css">
@@ -195,10 +195,6 @@
         历史会话
     </h2>
     <ul class="history-list">
-        <!--test-->
-        <li><a href="">test1</a></li>
-        <li><a href="">test2</a></li>
-        <li><a href="">test3</a></li>
     </ul>
 </div>
 
@@ -210,7 +206,7 @@
             <a class=item id="other" href="">其他功能</a>
         </div>
     </div>
-    <h1 align="center">ChatGPT-三元组抽取</h1>
+    <h1 align="center">ChatGpt测试</h1>
     <div id="chatWindow">
         <el-row id="outputArea">
             <el-card id="echoCard">
@@ -324,17 +320,15 @@
                         });
 
                         var blinkTimeout = null;
-                        var gptResponses = ''; 
                         eventSource.addEventListener("message", function(evt){
                             var data = evt.data;
                             // var json = JSON.parse(data);
                             // var content = data.content ? data.content : '';
                             // content = content.replaceAll('\n','<br/>');
                             console.log(data)
-                            gptResponses += data;
 
-                            // var echoTxt = $('#echoTxt');
-                            // echoTxt.append(data);
+                            var echoTxt = $('#echoTxt');
+                            echoTxt.append(data);
                             var echoCard = $('#echoCard');
 
                             var scrollHeight = echoCard[0].scrollHeight;
@@ -360,10 +354,6 @@
 
                         //自定义 EventHandler，在收到 event 字段为 stop 的消息时触发, 在这里我们将SSE关闭
                         eventSource.addEventListener('stop', e => {
-                            var echoTxt = $('#echoTxt');
-                            echoTxt.append("<div class='outputEcho'><span class='text'>" + gptResponses + "</span></div>"); // Append the stored responses to the output area
-                            gptResponses = ''; // Clear the stored responses
-
                             console.log('EventSource连接结束');
 
                             //关闭连接（只有关闭后才不会一直重连）
@@ -386,6 +376,38 @@
             }
         }
     })
+    function createDynamicLinks() {
+        // Make an Ajax request to Spring Boot endpoint (replace with your actual endpoint)
+        fetch('/history')
+            .then(response => response.json())
+            .then(data => {
+                // Get the dynamicLinks ul element
+                const dynamicLinksUl = document.querySelector('.history-list');
+
+                // Iterate through the numbers received from Spring Boot
+                for(let i = 1; i<=data; i++){
+                    // Create a new list item and hyperlink
+                    const listItem = document.createElement('li');
+                    const hyperlink = document.createElement('a');
+
+                    // Set the href attribute (you can customize the link as needed)
+                    hyperlink.href = 'historyChat/'+i;
+
+                    // Set the link text to the number
+                    hyperlink.textContent = '历史 '+i;
+
+                    // Append the hyperlink to the list item, and the list item to the ul
+                    listItem.appendChild(hyperlink);
+                    // dynamicLinksUl.appendChild(listItem);
+                    dynamicLinksUl.appendChild(listItem);
+                }
+
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    }
+
+    // Call the function to create dynamic links when the page loads
+    document.addEventListener('DOMContentLoaded', createDynamicLinks);
 
 
 
