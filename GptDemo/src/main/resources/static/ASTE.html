@@ -324,15 +324,17 @@
                         });
 
                         var blinkTimeout = null;
+                        var gptResponses = ''; 
                         eventSource.addEventListener("message", function(evt){
                             var data = evt.data;
                             // var json = JSON.parse(data);
                             // var content = data.content ? data.content : '';
                             // content = content.replaceAll('\n','<br/>');
                             console.log(data)
+                            gptResponses += data;
 
-                            var echoTxt = $('#echoTxt');
-                            echoTxt.append(data);
+                            // var echoTxt = $('#echoTxt');
+                            // echoTxt.append(data);
                             var echoCard = $('#echoCard');
 
                             var scrollHeight = echoCard[0].scrollHeight;
@@ -358,6 +360,10 @@
 
                         //自定义 EventHandler，在收到 event 字段为 stop 的消息时触发, 在这里我们将SSE关闭
                         eventSource.addEventListener('stop', e => {
+                            var echoTxt = $('#echoTxt');
+                            echoTxt.append("<div class='outputEcho'><span class='text'>" + gptResponses + "</span></div>"); // Append the stored responses to the output area
+                            gptResponses = ''; // Clear the stored responses
+
                             console.log('EventSource连接结束');
 
                             //关闭连接（只有关闭后才不会一直重连）
