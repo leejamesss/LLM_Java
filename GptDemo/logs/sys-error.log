@@ -1,14 +1,45 @@
-2024-01-18 21:22:07 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,86] - 连接异常
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:323)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
-	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)
-	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
-	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
-	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:111)
-	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1510)
+2024-01-20 15:26:10 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:26:10 [task-2] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:26:10 [http-nio-8080-exec-9] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:26:10 [http-nio-8080-exec-9] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.] with root cause
+retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:26:14 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at java.base/sun.security.ssl.SSLSocketImpl.handleEOF(SSLSocketImpl.java:1719)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1518)
 	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1425)
 	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
 	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
@@ -34,12 +65,19 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2024-01-18 21:22:07 [task-1] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
-java.lang.RuntimeException: java.net.SocketException: Connection reset
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:111)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1510)
+	... 25 common frames omitted
+2024-01-20 15:26:14 [task-3] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+java.lang.RuntimeException: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
 	at io.reactivex.internal.util.ExceptionHelper.wrapOrThrow(ExceptionHelper.java:46)
 	at io.reactivex.internal.operators.flowable.BlockingFlowableIterable$BlockingFlowableIterator.hasNext(BlockingFlowableIterable.java:90)
 	at io.reactivex.Flowable.blockingForEach(Flowable.java:5773)
-	at org.example.chatgpt.service.ChatService.streamChatCompletion(ChatService.java:95)
+	at org.example.chatgpt.service.ChatService.streamChatCompletion(ChatService.java:97)
 	at org.example.chatgpt.service.ChatService$$FastClassBySpringCGLIB$$3f8981bb.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
@@ -50,16 +88,9 @@ java.lang.RuntimeException: java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:323)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
-	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)
-	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
-	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
-	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:111)
-	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1510)
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at java.base/sun.security.ssl.SSLSocketImpl.handleEOF(SSLSocketImpl.java:1719)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1518)
 	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1425)
 	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
 	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
@@ -83,17 +114,17 @@ Caused by: java.net.SocketException: Connection reset
 	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
 	... 3 common frames omitted
-2024-01-18 21:22:07 [http-nio-8080-exec-5] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:323)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
-	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489)
 	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
 	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
 	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:111)
 	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1510)
+	... 25 common frames omitted
+2024-01-20 15:26:14 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at java.base/sun.security.ssl.SSLSocketImpl.handleEOF(SSLSocketImpl.java:1719)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1518)
 	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1425)
 	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
 	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
@@ -119,17 +150,17 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2024-01-18 21:22:07 [http-nio-8080-exec-5] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:323)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
-	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489)
 	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
 	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
 	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:111)
 	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1510)
+	... 25 common frames omitted
+2024-01-20 15:26:14 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at java.base/sun.security.ssl.SSLSocketImpl.handleEOF(SSLSocketImpl.java:1719)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1518)
 	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1425)
 	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
 	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
@@ -152,6 +183,1513 @@ java.net.SocketException: Connection reset
 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
 	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:111)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1510)
+	... 25 common frames omitted
+2024-01-20 15:26:18 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:26:18 [task-4] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:26:18 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:26:18 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.] with root cause
+retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:26:23 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:26:23 [task-5] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:26:23 [http-nio-8080-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:26:23 [http-nio-8080-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.] with root cause
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:26:27 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:26:27 [task-6] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:26:27 [http-nio-8080-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:26:27 [http-nio-8080-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.] with root cause
+retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:35:52 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:35:52 [task-2] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:35:52 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:35:52 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.] with root cause
+retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:35:56 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:35:56 [task-3] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:35:56 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:35:56 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.] with root cause
+retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:01 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:01 [task-4] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:01 [http-nio-8080-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:01 [http-nio-8080-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.] with root cause
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:05 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:05 [task-5] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:05 [http-nio-8080-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:05 [http-nio-8080-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.] with root cause
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:09 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:09 [task-6] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:09 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:09 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.] with root cause
+retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:14 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:14 [task-7] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:14 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:14 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.] with root cause
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:18 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:18 [task-8] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:18 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:18 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.] with root cause
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:22 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:22 [task-1] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:22 [http-nio-8080-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:22 [http-nio-8080-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.] with root cause
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:27 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:27 [task-2] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:27 [http-nio-8080-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:27 [http-nio-8080-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.] with root cause
+retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:31 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:31 [task-3] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:31 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:31 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.] with root cause
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:36 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:36 [task-4] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:36 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:36 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.] with root cause
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:41 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:41 [task-5] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:41 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:41 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.] with root cause
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:46 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:46 [task-6] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:46 [http-nio-8080-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:46 [http-nio-8080-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.] with root cause
+retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:51 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:51 [task-7] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:51 [http-nio-8080-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:51 [http-nio-8080-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.] with root cause
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:55 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:55 [task-8] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+io.reactivex.exceptions.CompositeException: 2 exceptions occurred. 
+	at io.reactivex.internal.operators.flowable.FlowableDoOnEach$DoOnEachSubscriber.onError(FlowableDoOnEach.java:107)
+	at io.reactivex.internal.subscribers.BasicFuseableSubscriber.onError(BasicFuseableSubscriber.java:101)
+	at io.reactivex.internal.operators.flowable.FlowableCreate$BaseEmitter.error(FlowableCreate.java:292)
+	at io.reactivex.internal.operators.flowable.FlowableCreate$BufferAsyncEmitter.drain(FlowableCreate.java:536)
+	at io.reactivex.internal.operators.flowable.FlowableCreate$BufferAsyncEmitter.tryOnError(FlowableCreate.java:486)
+	at io.reactivex.internal.operators.flowable.FlowableCreate$BaseEmitter.onError(FlowableCreate.java:274)
+	at com.theokanning.openai.service.ResponseBodyCallback.onFailure(ResponseBodyCallback.java:97)
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:83)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: io.reactivex.exceptions.CompositeException$CompositeExceptionCausalChain: Chain of Causes for CompositeException In Order Received =>
+	at io.reactivex.exceptions.CompositeException.getCause(CompositeException.java:110)
+	at ch.qos.logback.classic.spi.ThrowableProxy.<init>(ThrowableProxy.java:57)
+	at ch.qos.logback.classic.spi.LoggingEvent.<init>(LoggingEvent.java:119)
+	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:419)
+	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:383)
+	at ch.qos.logback.classic.Logger.log(Logger.java:765)
+	at org.apache.commons.logging.LogAdapter$Slf4jLocationAwareLog.error(LogAdapter.java:433)
+	at org.springframework.aop.interceptor.SimpleAsyncUncaughtExceptionHandler.handleUncaughtException(SimpleAsyncUncaughtExceptionHandler.java:39)
+	at org.springframework.aop.interceptor.AsyncExecutionAspectSupport.handleError(AsyncExecutionAspectSupport.java:316)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:124)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	... 3 common frames omitted
+Caused by: com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	... 3 common frames omitted
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+Caused by: org.apache.catalina.connector.ClientAbortException: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:310)
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:273)
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:320)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:160)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:248)
+	at org.springframework.util.StreamUtils.copy(StreamUtils.java:148)
+	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:126)
+	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:44)
+	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:227)
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.sendInternal(ResponseBodyEmitterReturnValueHandler.java:212)
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.send(ResponseBodyEmitterReturnValueHandler.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.sendInternal(ResponseBodyEmitter.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.send(ResponseBodyEmitter.java:199)
+	at org.springframework.web.servlet.mvc.method.annotation.SseEmitter.send(SseEmitter.java:127)
+	at org.example.chatgpt.service.ChatService.sendStopEvent(ChatService.java:127)
+	at org.example.chatgpt.service.ChatService.lambda$0(ChatService.java:91)
+	at io.reactivex.internal.operators.flowable.FlowableDoOnEach$DoOnEachSubscriber.onError(FlowableDoOnEach.java:104)
+	at io.reactivex.internal.subscribers.BasicFuseableSubscriber.onError(BasicFuseableSubscriber.java:101)
+	at io.reactivex.internal.operators.flowable.FlowableCreate$BaseEmitter.error(FlowableCreate.java:292)
+	at io.reactivex.internal.operators.flowable.FlowableCreate$BufferAsyncEmitter.drain(FlowableCreate.java:536)
+	at io.reactivex.internal.operators.flowable.FlowableCreate$BufferAsyncEmitter.tryOnError(FlowableCreate.java:486)
+	at io.reactivex.internal.operators.flowable.FlowableCreate$BaseEmitter.onError(FlowableCreate.java:274)
+	at com.theokanning.openai.service.ResponseBodyCallback.onFailure(ResponseBodyCallback.java:97)
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:83)
+	... 5 common frames omitted
+Caused by: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:97)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:135)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1384)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:773)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:726)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:716)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:573)
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:157)
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:221)
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1255)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:402)
+	at org.apache.coyote.Response.action(Response.java:209)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:306)
+	... 29 common frames omitted
+2024-01-20 15:36:55 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:55 [task-1] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:55 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:55 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.] with root cause
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:59 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:59 [task-2] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:36:59 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:36:59 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.] with root cause
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:04 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:04 [task-3] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:04 [http-nio-8080-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:04 [http-nio-8080-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.] with root cause
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:08 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:08 [task-4] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:08 [http-nio-8080-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:08 [http-nio-8080-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.] with root cause
+retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:12 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:12 [task-5] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:12 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:12 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.] with root cause
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:17 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:17 [task-6] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:17 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:17 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.] with root cause
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:21 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:21 [task-7] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:21 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:21 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.] with root cause
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:25 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:25 [task-8] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:25 [http-nio-8080-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:25 [http-nio-8080-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.] with root cause
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:29 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:29 [task-1] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:29 [http-nio-8080-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:29 [http-nio-8080-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.] with root cause
+retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:34 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:34 [task-2] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:34 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:34 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.] with root cause
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:38 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:38 [task-3] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:38 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:38 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.] with root cause
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:42 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:42 [task-4] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:42 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:42 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.] with root cause
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:46 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:46 [task-5] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:46 [http-nio-8080-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:46 [http-nio-8080-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.] with root cause
+retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:51 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:51 [task-6] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:51 [http-nio-8080-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:51 [http-nio-8080-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.] with root cause
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:55 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:55 [task-7] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:55 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:55 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.] with root cause
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:59 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:59 [task-8] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:37:59 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:37:59 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.] with root cause
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:38:03 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:38:03 [task-1] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:38:03 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:38:03 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.] with root cause
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:38:07 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:38:07 [task-2] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:38:07 [http-nio-8080-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:38:07 [http-nio-8080-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Invalid value for 'content': expected a string, got null.] with root cause
+retrofit2.HttpException: HTTP 400 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:38:11 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:38:11 [task-3] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:38:11 [http-nio-8080-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:38:11 [http-nio-8080-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.] with root cause
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:38:15 [OkHttp https://api.openai.com/...] ERROR o.e.c.s.ChatService - [lambda$0,89] - 连接异常
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:38:15 [task-4] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - [handleUncaughtException,39] - Unexpected exception occurred invoking async method: public void org.example.chatgpt.service.ChatService.streamChatCompletion(java.lang.String,org.springframework.web.servlet.mvc.method.annotation.SseEmitter)
+com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:52)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	... 5 common frames omitted
+2024-01-20 15:38:15 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] threw exception
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-20 15:38:15 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - [log,175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.theokanning.openai.OpenAiHttpException: Rate limit reached for gpt-3.5-turbo in organization org-Dnxx4vnkN9w8p0Fj6tGt7F4Z on requests per min (RPM): Limit 3, Used 3, Requested 1. Please try again in 20s. Visit https://platform.openai.com/account/rate-limits to learn more. You can increase your rate limit by adding a payment method to your account at https://platform.openai.com/account/billing.] with root cause
+retrofit2.HttpException: HTTP 429 
+	at com.theokanning.openai.service.ResponseBodyCallback.onResponse(ResponseBodyCallback.java:42)
+	at retrofit2.OkHttpCall$1.onResponse(OkHttpCall.java:161)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
